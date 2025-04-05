@@ -21,7 +21,7 @@
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
-        "vite": "^4.0.0"
+        "vite": "^4.5.12"
     },
     "dependencies": {
         "agora-rtc-sdk": "^3.6.11",
