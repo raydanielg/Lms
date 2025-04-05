@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g data-name="w3c (4)">
+        <path data-name="Path 2518" d="M426.667 21.334h-8A2.675 2.675 0 0 1 416 18.667v-8z" transform="translate(-364 -9.334)" style="fill:#bdd3dd"/>
+        <g data-name="Group 1875">
+            <path data-name="Path 2519" d="M165.333 21.334v48A2.675 2.675 0 0 1 162.666 72H120a2.675 2.675 0 0 1-2.667-2.667v-56A2.675 2.675 0 0 1 120 10.667h34.667v8a2.675 2.675 0 0 0 2.667 2.667z" transform="translate(-102.666 -9.334)" style="fill:#fff"/>
+            <path data-name="Path 2520" d="M388 320v6.667L386.667 328H384v-8z" transform="translate(-336 -280)" style="fill:#fff"/>
+        </g>
+        <g data-name="Group 1876">
+            <path data-name="Path 2521" d="M53.333 174.04 36 181.333l-17.334-7.293-8-3.373L36 160l25.333 10.667z" transform="translate(-9.333 -140)" style="fill:#bdd3dd"/>
+            <path data-name="Path 2522" d="M109.332 272.32v20.627l-17.333 8-17.333-8V272.32L92 279.613z" transform="translate(-65.332 -238.28)" style="fill:#bdd3dd"/>
+        </g>
+        <g data-name="Group 1877">
+            <path data-name="Path 2523" d="M170.666 64H184v2.667h-13.334z" transform="translate(-149.333 -56)" style="fill:#1f3b64"/>
+            <path data-name="Path 2524" d="M170.666 106.667h2.667v2.667h-2.667z" transform="translate(-149.333 -93.334)" style="fill:#1f3b64"/>
+            <path data-name="Path 2525" d="M213.333 106.667H216v2.667h-2.667z" transform="translate(-186.666 -93.334)" style="fill:#1f3b64"/>
+            <path data-name="Path 2526" d="M156.942 11.057 146.275.391a1.333 1.333 0 0 0-.942-.391h-34.667a4 4 0 0 0-4 4v14.667h2.667V4a1.333 1.333 0 0 1 1.333-1.333H144v6.666a4 4 0 0 0 4 4h2.667v-2.666H148a1.333 1.333 0 0 1-1.333-1.333V4.552l8 8V60a1.333 1.333 0 0 1-1.333 1.333H132V64h21.333a4 4 0 0 0 4-4V12a1.333 1.333 0 0 0-.391-.943z" transform="translate(-93.333)" style="fill:#1f3b64"/>
+            <path data-name="Path 2527" d="M45.333 185.331v-19.747l5.333-2.245v5.992H48a1.333 1.333 0 0 0-1.333 1.333v8A1.333 1.333 0 0 0 48 180h2.667a1.334 1.334 0 0 0 .943-.391l1.333-1.333a1.333 1.333 0 0 0 .391-.943v-16a1.334 1.334 0 0 0-.816-1.229l-25.334-10.669a1.334 1.334 0 0 0-1.035 0L.816 160.1a1.333 1.333 0 0 0 0 2.457L8 165.584v19.747a1.333 1.333 0 0 0 .775 1.211l17.333 8a1.333 1.333 0 0 0 1.117 0l17.333-8a1.333 1.333 0 0 0 .775-1.211zm5.333-8.552-.552.552h-.781V172h1.333zm-24-24.667 21.9 9.219-21.9 9.22-21.9-9.22zm0 39.752-16-7.387v-17.77l14.667 6.176v8.448H28v-8.448l14.667-6.176v17.771z" transform="translate(0 -130.664)" style="fill:#1f3b64"/>
+            <path data-name="Path 2528" d="M192 234.667h5.333v2.667H192z" transform="translate(-167.999 -205.334)" style="fill:#1f3b64"/>
+        </g>
+    </g>
+</svg>

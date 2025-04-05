@@ -1,0 +1,7 @@
+<svg data-name="Iconly/Bulk/Add User" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g data-name="Add User">
+        <path data-name="Fill 1" d="M3.4 1.392h-.8V.608a.6.6 0 1 0-1.2 0v.784H.6a.608.608 0 0 0 0 1.215h.8v.785a.6.6 0 1 0 1.2 0v-.785h.8a.608.608 0 0 0 0-1.215" transform="translate(10.666 5)" style="opacity:.4;fill:#818894"/>
+        <path data-name="Fill 4" d="M5 0C2.3 0 0 .431 0 2.154s2.289 2.169 5 2.169 5-.431 5-2.154S7.711 0 5 0" transform="translate(1.333 10.011)" style="fill:#818894"/>
+        <path data-name="Fill 7" d="M3.308 6.7a3.318 3.318 0 0 0 3.309-3.348 3.309 3.309 0 1 0-6.617 0A3.318 3.318 0 0 0 3.308 6.7" transform="translate(3.025 1.667)" style="opacity:.4;fill:#818894"/>
+    </g>
+</svg>

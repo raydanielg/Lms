@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.64" height="96.686" viewBox="0 0 98.64 96.686">
+    <defs>
+        <linearGradient id="ob4sqam34a" x1=".893" y1=".897" x2=".125" y2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="9ohraf9x8b" x1=".893" y1=".897" x2=".125" y2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#9effc1"/>
+            <stop offset="1" stop-color="#43d477"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-474 -955)" data-name="Group 1722">
+        <rect data-name="Rectangle 831" width="74" height="74" rx="20" transform="rotate(22.5 -2149.396 1740.162)" style="fill:url(#ob4sqam34a);opacity:.1"/>
+        <rect data-name="Rectangle 833" width="8" height="8" rx="4" transform="rotate(51.98 -711.04 1066.947)" style="opacity:.05;fill:url(#ob4sqam34a)"/>
+        <rect data-name="Rectangle 834" width="5.358" height="5.358" rx="2.679" transform="rotate(51.98 -814.767 1010.654)" style="opacity:.31;fill:url(#9ohraf9x8b)"/>
+        <rect data-name="Rectangle 832" width="8" height="8" rx="4" transform="rotate(51.98 -760.299 980.483)" style="opacity:.05;fill:url(#ob4sqam34a)"/>
+        <g data-name="Group 1726">
+            <path data-name="Path 2419" d="M55.1 14.088h2.413v-2.414A9.674 9.674 0 0 0 47.835 2h-28.07a9.675 9.675 0 0 0-7.072 3.071l-5.82 6.244a9.653 9.653 0 0 0-2.583 6.6v42.152a9.674 9.674 0 0 0 9.674 9.674h33.871a9.8 9.8 0 0 0 9.674-9.674 2.5 2.5 0 0 1-1.715-.7L49.973 53.5a7.3 7.3 0 0 1-2.117-5.123V21.349a7.24 7.24 0 0 1 7.24-7.261zM38.161 55.219h-24.2v-4.826h24.2zm0-9.674h-24.2v-4.827h24.2zm0-9.674h-24.2v-4.848h24.2z" transform="translate(490.031 968.007)" style="fill-rule:evenodd;fill:#43d685"/>
+            <path data-name="Path 2420" d="M36.814 12.413v4.848H27.14v-4.848A2.434 2.434 0 0 1 29.574 10h4.848a2.434 2.434 0 0 1 2.392 2.413z" transform="translate(515.553 976.942)" style="fill:#072a30;fill-rule:evenodd"/>
+            <path data-name="Path 2421" d="M27.185 15.71h9.674v17.338a2.456 2.456 0 0 1-.72 1.715L32.032 39 27.8 34.762a2.434 2.434 0 0 1-.7-1.715z" transform="translate(515.508 983.32)" style="fill:#072a30;fill-rule:evenodd"/>
+        </g>
+        <path data-name="Path 2422" d="M8.85 10h14.522v4.848H8.85z" transform="translate(495.124 976.942)" style="fill:#072a30"/>
+    </g>
+</svg>

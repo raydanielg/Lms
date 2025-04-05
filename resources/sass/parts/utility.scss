@@ -1,0 +1,164 @@
+html.html-modal-open {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+}
+
+.xs-w-100 {
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+    }
+}
+
+.xs-fluid {
+    @media screen and (max-width: $screen-xs-max) {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.cursor-pointer, .custom-control-label {
+    cursor: pointer;
+}
+
+.text-dark-blue {
+    color: $dark-blue;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.text-hover-primary {
+    &:hover {
+        color: var(--primary) !important;
+    }
+}
+
+.text-hover-secondary {
+    &:hover {
+        color: var(--secondary) !important;
+    }
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.bg-info-light {
+    background-color: $info-light;
+}
+
+.status-badge-dark {
+    border: solid 1px $black;
+    color: $black;
+    background-color: unset;
+}
+
+.status-badge-primary {
+    border: solid 1px var(--primary);
+    color: var(--primary);
+    background-color: unset;
+}
+
+.status-badge-secondary {
+    border: solid 1px var(--secondary);
+    color: var(--secondary);
+    background-color: unset;
+}
+
+.status-badge-danger {
+    border: solid 1px $danger;
+    color: $danger;
+    background-color: unset;
+}
+
+.status-badge-warning {
+    border: solid 1px $warning;
+    color: $warning;
+    background-color: unset;
+}
+
+.tab-content {
+    .webinar-card {
+        &:hover {
+            transform: unset !important;
+        }
+    }
+}
+
+.panel-content {
+    .alert-warning {
+        margin-top: 10px !important;
+        font-weight: 500 !important;
+        color: #343434;
+        background-color: #ffab0070 !important;
+        border-color: #ffab00 !important;
+    }
+
+    .alert {
+        position: relative;
+        padding: 1rem !important;
+        margin-bottom: 0;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+}
+
+.px-12 {
+    padding: 0 12px !important;
+}
+
+#topFilters {
+    label {
+        font-size: 0.875rem;
+    }
+}
+
+.filters-container {
+    label {
+        font-size: 0.875rem;
+    }
+}
+
+.rtl {
+    direction: rtl !important;
+}
+
+.ltr {
+    direction: ltr !important;
+}
+
+.list-style-none li {
+    list-style: none;
+}
+
+.white-space-pre-wrap {
+    white-space: pre-wrap;
+}
+
+
+.close-body-scroll {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+}

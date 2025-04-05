@@ -1,0 +1,36 @@
+.success-transparent-alert {
+    border-radius: 15px;
+    border: solid 1px #43d477;
+    background-color: rgba(67, 212, 119, 0.05);
+
+    &__icon {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(67, 212, 119, 0.3);
+    }
+
+    * {
+        color: #43d477;
+    }
+}
+
+
+.danger-transparent-alert {
+    border-radius: 15px;
+    border: solid 1px #f63c3c;
+    background-color: rgba(246, 60, 60, 0.05);
+
+    &__icon {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(246, 60, 60, 0.3);
+    }
+
+    * {
+        color: #f63c3c;
+    }
+}

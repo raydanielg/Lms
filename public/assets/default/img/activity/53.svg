@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_296" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 296" transform="translate(1048 176)"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:#fff}.cls-4{fill:#bdd3dd}.cls-6{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_53" clip-path="url(#clip-path)" data-name="Mask Group 53" transform="translate(-1048 -176)">
+        <g id="backup" transform="translate(1048 176)">
+            <circle id="Ellipse_91" cx="4" cy="4" r="4" fill="#f2f2f2" data-name="Ellipse 91" transform="translate(37.333 41.333)"/>
+            <g id="Group_581" data-name="Group 581">
+                <path id="Path_710" d="M8 41.333h25.333v8H8z" class="cls-4" data-name="Path 710"/>
+                <path id="Path_711" d="M24 17.333h32v8H24z" class="cls-4" data-name="Path 711"/>
+                <path id="Path_712" d="M57.333 6.667V12H6.667V6.667h50.666z" class="cls-4" data-name="Path 712"/>
+                <path id="Path_713" d="M56 58.667v4H8v-8h48z" class="cls-4" data-name="Path 713"/>
+                <path id="Path_714" d="M57.333 30.667V36H6.667v-5.333h50.666z" class="cls-4" data-name="Path 714"/>
+            </g>
+            <g id="Group_582" data-name="Group 582">
+                <path id="Path_715" d="M33.333 49.333v-8H8v8zm4-4a4 4 0 1 0 4-4 4 4 0 0 0-4 4zM56 54.667H4A2.675 2.675 0 0 1 1.333 52V38.667A2.675 2.675 0 0 1 4 36h56a2.675 2.675 0 0 1 2.667 2.667V52A2.675 2.675 0 0 1 60 54.667z" class="cls-5" data-name="Path 715"/>
+                <path id="Path_716" d="M60 12H4a2.675 2.675 0 0 0-2.667 2.667V28A2.675 2.675 0 0 0 4 30.667h56A2.675 2.675 0 0 0 62.667 28V14.667A2.675 2.675 0 0 0 60 12zm-4 13.333H24v-8h32z" class="cls-5" data-name="Path 716"/>
+                <path id="Path_717" d="M52 1.333v5.334H12V1.333z" class="cls-5" data-name="Path 717"/>
+                <circle id="Ellipse_92" cx="17.333" cy="17.333" r="17.333" class="cls-5" data-name="Ellipse 92" transform="translate(28 28)"/>
+            </g>
+            <g id="Group_583" data-name="Group 583">
+                <path id="Path_718" d="M60 10.667h-1.333v-4a1.333 1.333 0 0 0-1.333-1.333h-4v-4A1.333 1.333 0 0 0 52 0H12a1.333 1.333 0 0 0-1.333 1.333v4h-4a1.333 1.333 0 0 0-1.334 1.334v4H4a4 4 0 0 0-4 4V28a4 4 0 0 0 4 4h1.333v2.667H4a4 4 0 0 0-4 4V52a4 4 0 0 0 4 4h22.667v-2.667H4A1.333 1.333 0 0 1 2.667 52V38.667A1.333 1.333 0 0 1 4 37.333h21.333v-2.666H8V32h20v-2.667H4A1.333 1.333 0 0 1 2.667 28V14.667A1.333 1.333 0 0 1 4 13.333h56a1.333 1.333 0 0 1 1.333 1.333V28A1.333 1.333 0 0 1 60 29.333V32a4 4 0 0 0 4-4V14.667a4 4 0 0 0-4-4zm-52 0V8h4a1.333 1.333 0 0 0 1.333-1.333v-4h37.334v4A1.333 1.333 0 0 0 52 8h4v2.667z" class="cls-6" data-name="Path 718"/>
+                <path id="Path_719" d="M9.333 58.667H6.667v4A1.333 1.333 0 0 0 8 64h25.333v-2.667h-24v-2.666z" class="cls-6" data-name="Path 719"/>
+                <path id="Path_720" d="M16 5.333h32V8H16z" class="cls-6" data-name="Path 720"/>
+                <path id="Path_721" d="M6.667 16h2.666v10.667H6.667z" class="cls-6" data-name="Path 721"/>
+                <path id="Path_722" d="M12 16h2.667v5.333H12z" class="cls-6" data-name="Path 722"/>
+                <path id="Path_723" d="M17.333 16H20v5.333h-2.667V16z" class="cls-6" data-name="Path 723"/>
+                <path id="Path_724" d="M12 24h2.667v2.667H12z" class="cls-6" data-name="Path 724"/>
+                <path id="Path_725" d="M17.333 24H20v2.667h-2.667V24z" class="cls-6" data-name="Path 725"/>
+                <path id="Path_726" d="M52 24v2.667h4a1.333 1.333 0 0 0 1.333-1.333v-8A1.333 1.333 0 0 0 56 16H24a1.333 1.333 0 0 0-1.333 1.333v8A1.333 1.333 0 0 0 24 26.667h13.333V24h-12v-5.333h29.334V24z" class="cls-6" data-name="Path 726"/>
+                <path id="Path_727" d="M24 42.667V40H8a1.333 1.333 0 0 0-1.333 1.333v8A1.333 1.333 0 0 0 8 50.667h16V48H9.333v-5.333z" class="cls-6" data-name="Path 727"/>
+                <path id="Path_728" d="M45.333 26.667A18.667 18.667 0 1 0 64 45.333a18.667 18.667 0 0 0-18.667-18.666zm0 34.667a16 16 0 1 1 16-16 16 16 0 0 1-16 15.999z" class="cls-6" data-name="Path 728"/>
+                <path id="Path_729" d="M45.333 50.667a1.334 1.334 0 0 0 .943-.391l5.333-5.333-1.885-1.885-3.057 3.057V34.667H44v11.448l-3.057-3.057-1.885 1.885 5.333 5.333a1.333 1.333 0 0 0 .942.391z" class="cls-6" data-name="Path 729"/>
+                <path id="Path_730" d="M52 53.333H38.667v-2.666H36v2.667A2.612 2.612 0 0 0 38.556 56H52a2.612 2.612 0 0 0 2.667-2.556v-2.777H52z" class="cls-6" data-name="Path 730"/>
+            </g>
+        </g>
+    </g>
+</svg>

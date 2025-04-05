@@ -1,0 +1,63 @@
+.contact-info-modal {
+    .contact-avatar {
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.contact-us-head {
+    padding-top: 120px;
+
+    @media (max-width: $screen-xs-max) {
+        padding-top: 60px;
+    }
+}
+
+.contact-map {
+    height: 644px;
+    border-radius: 15px;
+    z-index: 10;
+    position: relative;
+    top: -300px;
+    margin-bottom: -250px;
+
+    @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max){
+        height: 500px;
+        top: -230px;
+        margin-bottom: -230px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        height: 360px;
+        top: -100px;
+        margin-bottom: -80px;
+    }
+}
+
+.contact-items {
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+
+    .contact-icon-box {
+        border-radius: 24px;
+        width: 85px;
+        height: 85px;
+
+        &.box-info {
+            background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+        }
+
+        &.box-green {
+            background-image: linear-gradient(135deg, #11c99c, #00e31d);
+        }
+
+        &.box-red {
+            background-image: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+        }
+    }
+}

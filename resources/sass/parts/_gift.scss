@@ -1,0 +1,54 @@
+.gift-item-card {
+    position: relative;
+
+    .gift-webinar-card {
+        position: relative;
+        padding: 10px;
+        border-radius: 15px;
+        border: solid 1px var(--gray200);
+        z-index: 2;
+
+        .image-box {
+            width: 349px;
+            min-width: 349px;
+            height: 236px;
+            border-radius: 10px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .webinar-price-box {
+            .real {
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 1.22;
+                color: var(--primary);
+                pointer-events: none;
+            }
+
+            .off {
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.29;
+                color: $gray;
+                text-decoration: line-through;
+            }
+        }
+
+        .webinar-title {
+            height: 48px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    .gift-item-card-icon {
+        position: absolute;
+        top: -72px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}

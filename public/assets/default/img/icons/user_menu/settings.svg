@@ -1,0 +1,6 @@
+<svg data-name="Iconly/Light/Setting" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(2.5 1.5)">
+        <path d="m17.528 5.346-.622-1.08a1.913 1.913 0 0 0-2.609-.7h0a1.9 1.9 0 0 1-2.609-.677 1.831 1.831 0 0 1-.256-.915h0A1.913 1.913 0 0 0 9.519 0H8.265a1.9 1.9 0 0 0-1.9 1.913h0A1.913 1.913 0 0 1 4.448 3.8a1.831 1.831 0 0 1-.915-.256h0a1.913 1.913 0 0 0-2.609.7l-.668 1.1a1.913 1.913 0 0 0 .7 2.609h0a1.913 1.913 0 0 1 .957 1.657 1.913 1.913 0 0 1-.957 1.657h0a1.9 1.9 0 0 0-.7 2.6h0l.632 1.089A1.913 1.913 0 0 0 3.5 15.7h0a1.895 1.895 0 0 1 2.6.7 1.831 1.831 0 0 1 .256.915h0a1.913 1.913 0 0 0 1.913 1.913h1.25a1.913 1.913 0 0 0 1.913-1.9h0a1.9 1.9 0 0 1 1.913-1.913 1.95 1.95 0 0 1 .915.256h0a1.913 1.913 0 0 0 2.609-.7h0l.659-1.1a1.9 1.9 0 0 0-.7-2.609h0a1.9 1.9 0 0 1-.7-2.609 1.876 1.876 0 0 1 .7-.7h0a1.913 1.913 0 0 0 .7-2.6h0z" transform="translate(.779 .778)" style="fill:none;stroke:#818894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px"/>
+        <circle cx="2.636" cy="2.636" r="2.636" transform="translate(7.039 7.753)" style="fill:none;stroke:#818894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px"/>
+    </g>
+</svg>

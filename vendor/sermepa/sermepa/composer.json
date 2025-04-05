@@ -1,0 +1,27 @@
+{
+  "name": "sermepa/sermepa",
+  "description": "Pasarela de pago Redsys, Sermepa",
+  "keywords": ["sermepa", "payment", "pasarela", "lacaixa", "sabadell", "redsys"],
+  "homepage": "https://github.com/ssheduardo/sermepa",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eduardo D",
+      "email": "ssh.eduardo@gmail.com",
+      "homepage": "http://ubublog.com/"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3|^7.2.5|^8.0|^8.1|^8.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0|^8.5.8|^9.3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sermepa\\Tpv\\": "src/Sermepa/Tpv/",
+      "Redsys\\": "src/Redsys/"
+    }
+  },
+  "minimum-stability": "stable"
+}

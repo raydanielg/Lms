@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_254" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 254" transform="translate(1631 176)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}.cls-4{fill:#bdd3dd}.cls-5{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_38" clip-path="url(#clip-path)" data-name="Mask Group 38" transform="translate(-1631 -176)">
+        <g id="commerce-and-shopping_1_" data-name="commerce-and-shopping (1)" transform="translate(1631 176)">
+            <g id="Group_520" data-name="Group 520">
+                <circle id="Ellipse_73" cx="12" cy="12" r="12" class="cls-3" data-name="Ellipse 73" transform="translate(20 6.667)"/>
+                <path id="Path_495" d="M57.333 13.333V24a6.667 6.667 0 0 0-6.667 6.667H32a12 12 0 0 0 0-24h18.667a6.667 6.667 0 0 0 6.666 6.666z" class="cls-3" data-name="Path 495"/>
+                <path id="Path_496" d="M20 6.667h12a12 12 0 0 0 0 24H13.333A6.667 6.667 0 0 0 6.667 24V13.333a6.667 6.667 0 0 0 6.667-6.667H20z" class="cls-3" data-name="Path 496"/>
+            </g>
+            <path id="Path_497" d="M1.333 33.333V4A2.675 2.675 0 0 1 4 1.333h56A2.675 2.675 0 0 1 62.667 4v29.333A2.675 2.675 0 0 1 60 36H4a2.675 2.675 0 0 1-2.667-2.667zm56-9.333V13.333a6.667 6.667 0 0 1-6.667-6.667H13.333a6.667 6.667 0 0 1-6.667 6.667V24a6.667 6.667 0 0 1 6.667 6.667h37.334A6.666 6.666 0 0 1 57.333 24z" class="cls-4" data-name="Path 497"/>
+            <g id="Group_521" data-name="Group 521">
+                <path id="Path_498" d="M62.667 36v8A2.675 2.675 0 0 1 60 46.667H4A2.675 2.675 0 0 1 1.333 44v-8z" class="cls-3" data-name="Path 498"/>
+                <path id="Path_499" d="M45.333 57.333v4A1.333 1.333 0 0 1 44 62.667H20a1.333 1.333 0 0 1-1.333-1.333v-4z" class="cls-3" data-name="Path 499"/>
+            </g>
+            <path id="Path_500" d="M40 46.667l1.333 10.667H22.667L24 46.667z" class="cls-4" data-name="Path 500"/>
+            <g id="Group_522" data-name="Group 522">
+                <path id="Path_501" d="M61.333 44A1.333 1.333 0 0 1 60 45.333H4A1.333 1.333 0 0 1 2.667 44v-4H0v4a4 4 0 0 0 4 4h18.489l-1 8h-2.822a1.333 1.333 0 0 0-1.333 1.333v4h-2.667V64h34.666v-2.667h-2.666v-4A1.333 1.333 0 0 0 45.333 56h-2.822l-1-8H60a4 4 0 0 0 4-4v-4h-2.667zM44 61.333H20v-2.666h24zM39.823 56H24.177l1-8h13.646z" class="cls-5" data-name="Path 501"/>
+                <path id="Path_502" d="M60 0H4a4 4 0 0 0-4 4v29.333a4 4 0 0 0 4 4v-2.666a1.333 1.333 0 0 1-1.333-1.333V4A1.333 1.333 0 0 1 4 2.667h56A1.333 1.333 0 0 1 61.333 4v29.333A1.333 1.333 0 0 1 60 34.667v2.667a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4z" class="cls-5" data-name="Path 502"/>
+                <path id="Path_503" d="M5.333 24a1.333 1.333 0 0 0 1.333 1.333A5.333 5.333 0 0 1 12 30.667 1.333 1.333 0 0 0 13.333 32H20v-2.667h-5.444A8.023 8.023 0 0 0 8 22.777v-8.221A8.023 8.023 0 0 0 14.556 8H20V5.333h-6.667A1.333 1.333 0 0 0 12 6.667 5.333 5.333 0 0 1 6.667 12a1.333 1.333 0 0 0-1.333 1.333V24z" class="cls-5" data-name="Path 503"/>
+                <path id="Path_504" d="M52 6.667a1.333 1.333 0 0 0-1.333-1.333H44V8h5.444A8.023 8.023 0 0 0 56 14.556v8.221a8.023 8.023 0 0 0-6.556 6.556H44V32h6.667A1.333 1.333 0 0 0 52 30.667a5.333 5.333 0 0 1 5.333-5.333A1.333 1.333 0 0 0 58.667 24V13.333A1.333 1.333 0 0 0 57.333 12 5.333 5.333 0 0 1 52 6.667z" class="cls-5" data-name="Path 504"/>
+                <path id="Path_505" d="M5.333 5.333H8V8H5.333z" class="cls-5" data-name="Path 505"/>
+                <path id="Path_506" d="M56 5.333h2.667V8H56z" class="cls-5" data-name="Path 506"/>
+                <path id="Path_507" d="M56 29.333h2.667V32H56z" class="cls-5" data-name="Path 507"/>
+                <path id="Path_508" d="M5.333 29.333H8V32H5.333z" class="cls-5" data-name="Path 508"/>
+                <path id="Path_509" d="M32 5.333a13.333 13.333 0 1 0 13.333 13.334A13.333 13.333 0 0 0 32 5.333zm0 24a10.667 10.667 0 1 1 10.667-10.666A10.667 10.667 0 0 1 32 29.333z" class="cls-5" data-name="Path 509"/>
+                <path id="Path_510" d="M6.667 34.667h50.666v2.667H6.667z" class="cls-5" data-name="Path 510"/>
+            </g>
+        </g>
+    </g>
+</svg>

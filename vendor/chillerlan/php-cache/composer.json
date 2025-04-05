@@ -1,0 +1,61 @@
+{
+	"name": "chillerlan/php-cache",
+	"description": "A psr/simple-cache implementation. PHP 8.1+",
+	"homepage": "https://github.com/chillerlan/php-cache",
+	"license": "MIT",
+	"type": "library",
+	"keywords": [
+		"cache", "psr-16", "php8"
+	],
+	"authors": [
+		{
+			"name": "Smiley",
+			"email": "smiley@chillerlan.net",
+			"homepage": "https://github.com/codemasher"
+		},
+		{
+			"name": "Contributors",
+			"homepage":"https://github.com/chillerlan/php-cache/graphs/contributors"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/chillerlan/php-cache/issues",
+		"source": "https://github.com/chillerlan/php-cache"
+	},
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"require": {
+		"php": "^8.1",
+		"psr/log": "^1.1 || ^2.0 || ^3.0",
+		"psr/simple-cache": "^2.0 || ^3.0",
+		"chillerlan/php-settings-container": "^3.1"
+	},
+	"require-dev": {
+		"phan/phan": "^5.4",
+		"phpmd/phpmd": "^2.15",
+		"phpunit/phpunit": "^10.5",
+		"squizlabs/php_codesniffer": "^3.9"
+	},
+	"autoload": {
+		"psr-4": {
+			"chillerlan\\SimpleCache\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"chillerlan\\SimpleCacheTest\\": "tests"
+		}
+	},
+	"provide": {
+		"psr/simple-cache-implementation": "2.0 || 3.0"
+	},
+	"scripts": {
+		"phpunit": "@php vendor/bin/phpunit",
+		"phan": "@php vendor/bin/phan"
+	},
+	"config": {
+		"lock": false,
+		"sort-packages": true,
+		"platform-check": true
+	}
+}

@@ -1,0 +1,40 @@
+.instructor-discount-card {
+    background-color: var(--gray100);
+
+    &__code {
+        position: relative;
+        width: 122px;
+        height: 82px;
+        padding-right: 15px;
+        border-right: 1px dashed $gray-300;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            right: -8px;
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        &:before {
+            top: -7px;
+        }
+
+        &:after {
+            bottom: -7px;
+        }
+    }
+
+    &.is-cart-page {
+
+        .instructor-discount-card__code {
+
+            &:before, &:after {
+                background-color: var(--body_bg, #ffffff);
+            }
+        }
+    }
+}

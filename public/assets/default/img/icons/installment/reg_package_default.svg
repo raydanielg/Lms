@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <g transform="translate(-112 -64)">
+        <circle data-name="Ellipse 421" cx="32" cy="32" r="32" transform="translate(116 68)" style="opacity:.2;fill:#ffab00"/>
+        <g data-name="Ellipse 422" transform="translate(112 64)" style="stroke:#ececec;stroke-dasharray:5;opacity:.58;fill:none">
+            <circle cx="36" cy="36" r="36" style="stroke:none"/>
+            <circle cx="36" cy="36" r="35.5" style="fill:none"/>
+        </g>
+        <g data-name="Iconly/Bulk/Ticket Star">
+            <g data-name="Ticket Star">
+                <path data-name="Fill 1" d="M22.458 12.222a1.722 1.722 0 1 1 0-3.444.879.879 0 0 0 .618-.253.864.864 0 0 0 .257-.614V4.788A4.817 4.817 0 0 0 18.5 0H4.835A4.817 4.817 0 0 0 0 4.788v3.224a.864.864 0 0 0 .257.614.879.879 0 0 0 .618.253A1.645 1.645 0 0 1 2.612 10.5a1.731 1.731 0 0 1-1.737 1.722.871.871 0 0 0-.875.867v3.121A4.817 4.817 0 0 0 4.833 21H18.5a4.817 4.817 0 0 0 4.833-4.789v-3.122a.871.871 0 0 0-.875-.867" style="opacity:.4;fill:#ffab00" transform="translate(136.333 89.5)"/>
+                <path data-name="Fill 4" d="M8.267 3.953 6.892 5.292l.326 1.894a.864.864 0 0 1-1.255.909L4.264 7.2l-1.7.894a.862.862 0 0 1-1.251-.91l.324-1.894L.261 3.953A.863.863 0 0 1 .743 2.48L2.64 2.2 3.491.481A.861.861 0 0 1 4.264 0a.859.859 0 0 1 .772.482L5.889 2.2l1.9.278a.862.862 0 0 1 .477 1.471" transform="translate(143.735 95.567)" style="fill:#ffab00"/>
+            </g>
+        </g>
+    </g>
+</svg>

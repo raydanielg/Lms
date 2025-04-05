@@ -1,0 +1,19 @@
+
+
+$all-size: ();
+$all-size: map-merge(
+        (
+            '32':32,
+            '40':40,
+            '50':50,
+        ),
+        $all-size
+);
+
+@each $name, $val in $all-size {
+    .size-#{$name} {
+        width: #{$val}px;
+        min-width: #{$val}px;
+        height: #{$val}px;
+    }
+}

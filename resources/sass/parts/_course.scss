@@ -1,0 +1,729 @@
+.course-cover-container {
+    position: relative;
+    height: 530px;
+
+    @media (max-width: $screen-sm-max) {
+        &.not-active-special-offer {
+            height: 350px;
+        }
+    }
+
+    .course-cover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .cover-content {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .container {
+            z-index: 1;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.6;
+            background-color: #000000;
+        }
+    }
+}
+
+.special-offer-card {
+    .offer-percent-box {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 25%);
+        background-color: var(--primary);
+        border-radius: 15px;
+        box-shadow: 0 -10px 15px 0 rgba(67, 212, 119, 0.29);
+        width: 100px;
+        height: 100px;
+
+        .percent {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.22;
+        }
+
+        .off {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            width: 70px;
+            height: 70px;
+            transform: translate(-50%, 50%);
+            box-shadow: 0 2px 15px 0 rgba(67, 212, 119, 0.29);
+
+            .percent {
+                font-size: 20px;
+            }
+
+            .off {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.course-content-section {
+    position: relative;
+    top: -250px;
+    margin-bottom: -250px;
+
+    .instructor-discount-card {
+        margin-top: 35px;
+    }
+
+    &:not(.has-progress-bar) {
+        .instructor-discount-card {
+            margin-top: 75px !important;
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        &:not(.has-progress-bar) {
+            &.course, &.text_lesson {
+                top: -215px;
+                margin-bottom: -215px;
+            }
+        }
+    }
+
+    .course-title {
+        min-height: 88px;
+        max-height: 88px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .course-progress {
+        height: 11px;
+        padding: 2px;
+    }
+
+    .nav-tabs {
+        .nav-item, .nav-item a {
+            &.active, &:hover {
+                background-color: transparent !important;
+                border: none !important;
+            }
+        }
+    }
+
+    .teacher-avatar {
+        .user-circle-badge {
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.favorites-share-box {
+    margin-left: 0;
+    margin-right: 0;
+
+    .col {
+        border-right: solid 1px $gray-300;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        .rtl & {
+            border-left: solid 1px $gray-300;
+            border-right: none;
+
+            &:last-child {
+                border-left: none;
+            }
+        }
+    }
+
+    span {
+        margin-top: 5px;
+    }
+}
+
+.course-description {
+    color: $gray;
+
+    p {
+        color: $gray;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    li {
+        list-style: inherit;
+    }
+}
+
+.accordion-row {
+    .collapse-chevron-icon {
+        transition: 0.3s;
+
+        &.feather-chevron-up {
+            transform: rotateZ(180deg);
+        }
+
+        &.chevron-get-up {
+            transform: rotateZ(180deg);
+        }
+    }
+
+    .panel-collapse {
+        border-top: 1px solid $gray-300;
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+}
+
+.course-content-sidebar {
+
+    .course-img {
+        position: relative;
+        height: 250px;
+
+        img {
+            border-radius: 15px 15px 0 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 60%;
+            bottom: 0;
+            background-image: linear-gradient(to bottom, rgba(6, 6, 6, 0), rgba(0, 0, 0, 0.84));
+            z-index: 1;
+        }
+
+        &.has-video {
+            &:after {
+                top: 25%;
+                background-image: linear-gradient(to bottom, rgba(6, 6, 6, 0), rgba(0, 0, 0, 0.84));
+            }
+
+            .course-video-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 20px 12px 0 rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                z-index: 2;
+
+                svg {
+                    stroke: var(--secondary);
+                    fill: var(--secondary);
+                }
+            }
+        }
+    }
+
+    .btn-subscribe {
+        border-width: 2px;
+    }
+
+    .tags-card {
+        .tag-item {
+            margin-top: 15px;
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .sidebar-title {
+        position: relative;
+        pointer-events: none;
+
+        &:after {
+            content: '';
+            width: 35px;
+            height: 3px;
+            background-color: var(--primary);
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+
+            .rtl & {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+    .sidebar-ads {
+        width: 100%;
+        height: 180px;
+        max-height: 180px;
+    }
+}
+
+.course-teacher-card {
+
+    .teacher-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &.instructors-list {
+        .teacher-avatar {
+            width: 190px;
+            height: 190px;
+        }
+
+        .off-label {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            border-radius: 15px 3px 15px 3px;
+            z-index: 10;
+        }
+    }
+
+    .teacher-btn-action {
+        width: 50%;
+        padding: 0 !important;
+    }
+}
+
+.user-profile-avatar, .teacher-avatar {
+    position: relative;
+
+    .user-circle-badge {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border-radius: 50%;
+
+        &.has-verified {
+            background-color: #2196f3;
+        }
+
+        &.unavailable {
+            background-color: $danger;
+        }
+    }
+}
+
+.course-reviews-box {
+
+    .course-progress {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        width: 65%;
+        min-width: 65%;
+
+        .progress-bar {
+            background-color: #ffc600;
+        }
+    }
+}
+
+.upcoming-course-progress {
+    position: relative;
+    width: 100%;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+
+    .progress-bar {
+        background-color: var(--primary);
+
+        &.less-50 {
+            background-color: #ffc600;
+        }
+    }
+}
+
+.reviews-stars {
+    .barrating-stars {
+        border-right: 1px solid $gray-200;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.favorite-active {
+    fill: $danger;
+    stroke: $danger;
+}
+
+.video-js {
+    width: 100% !important;
+    border-radius: 10px;
+
+    iframe, .vjs-poster, video {
+        border-radius: 10px;
+    }
+
+    .vjs-big-play-button {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.course-content-btns {
+
+    @media (max-width: $screen-sm-max) {
+        font-size: 10px !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+        height: 30px !important;
+    }
+}
+
+
+.add-course-content-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #c6f2d6;
+    border-radius: 50%;
+    border: none !important;
+
+    svg {
+        color: var(--primary);
+    }
+}
+
+.chapter-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    height: 40px;
+    max-height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+
+    svg {
+        color: #FFFFFF;
+    }
+
+    &.chapter-content-icon {
+        background-color: $gray-200;
+
+        svg {
+            color: $gray;
+        }
+    }
+}
+
+.disabled-content-badge {
+    padding: 4px 8px;
+    border-radius: 13px;
+    background-color: rgba(246, 60, 60, 0.3);
+    font-size: 12px;
+    color: $danger;
+}
+
+.modal-video-lists {
+
+    .modal-video-item {
+        & > div.item-border {
+            border-bottom: 1px solid $gray-300;
+        }
+
+        &:last-child {
+            & > div.item-border {
+                border: 0;
+            }
+        }
+
+        &.active, &:hover {
+            background-color: $gray-200;
+        }
+
+        &.no-hover {
+            &.active, &:hover {
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.file-video-loading {
+    display: flex;
+    height: 426px;
+
+    @media (max-width: $screen-xs-max) {
+        height: 180px !important;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .my-video-dimensions {
+        height: 180px !important;
+    }
+}
+
+.vjs-has-started .vjs-loading-spinner {
+    display: none !important;
+}
+
+
+.buy-with-points-modal-img {
+    min-width: 114px;
+    width: 114px;
+    max-width: 114px;
+    height: 114px;
+}
+
+.demo-video-modal {
+
+    .demo-video-card {
+        max-height: 480px !important;
+    }
+}
+
+.play-iframe-page {
+    iframe {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.interactive-file-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.assignment-attachments-remove-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+    height: 26px !important;
+}
+
+.course-private-content {
+    padding: 125px 0;
+    margin: 70px 0;
+
+    .course-private-content-icon {
+        width: 270px;
+        height: 270px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        padding: 80px 0;
+        margin: 30px 0;
+
+        .course-private-content-icon {
+            width: 170px;
+            height: 170px;
+        }
+    }
+}
+
+
+$courseNoticeboardsColors: () !default;
+$courseNoticeboardsColors: map-merge(
+        (
+            "warning": 'warning',
+            "danger": 'danger',
+            "neutral": 'gray',
+            "info": 'blue',
+            "success": 'green',
+        ),
+        $courseNoticeboardsColors
+);
+
+
+.course-noticeboards {
+    position: relative;
+    border: 1px solid var(--gray200);
+
+    .course-noticeboard-icon {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            opacity: .3;
+            z-index: 1;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 15px;
+        opacity: 0.05;
+        z-index: 1;
+    }
+
+    @each $name, $colorVariable in $courseNoticeboardsColors {
+        &.noticeboard-#{$name} {
+            border-color: var(--#{$colorVariable});
+            color: var(--#{$colorVariable});
+
+            .course-noticeboard-icon:before {
+                background-color: var(--#{$colorVariable});
+            }
+
+            &:before {
+                background-color: var(--#{$colorVariable});
+            }
+        }
+    }
+}
+
+
+.webinar-extra-description-company-logos {
+    max-width: 105px;
+    max-height: 75px;
+}
+
+
+.webinar-extra-description-check-icon {
+    min-width: 18px;
+}
+
+.upcoming-course-body-on-cover {
+    height: 250px;
+
+    h1 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        pointer-events: none;
+    }
+}
+
+.installment-card {
+    border-radius: 15px;
+    border: solid 1px #ececec;
+
+    .card-progress {
+        height: 11px;
+        padding: 2px;
+    }
+
+    &__payments {
+        padding: 25px 10px 10px;
+        border-radius: 10px;
+        background-color: #fbfbfb;
+
+        .installment-step {
+            position: relative;
+            padding-left: 21px;
+            margin-top: 15px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 5px;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                border: solid 1px #ececec;
+                background-color: #fff;
+                z-index: 1;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: 11px;
+                width: 1px;
+                height: 30px;
+                border-left: 1px dashed #ececec;
+            }
+
+            &:first-child {
+                margin-top: 0;
+
+                &:before {
+                    border-color: var(--primary);
+                }
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.installment-video-card {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    video {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.installment-request-card {
+    padding: 126px 0;
+
+    @media (max-width: $screen-sm-max) {
+        padding: 30px 15px;
+    }
+}
+
+.installment-verify-attachment-add-btn {
+    border-radius: 0 8px 8px 0 !important;
+}
+
+.waitlist-modal {
+    .waitlist-modal-icon {
+        width: 136.9px;
+        height: 149px;
+    }
+}

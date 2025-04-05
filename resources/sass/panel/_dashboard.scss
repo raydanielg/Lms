@@ -1,0 +1,149 @@
+
+#nextBadgeChart path {
+    stroke-width: 10px;
+    stroke-dasharray: 10, 20;
+    stroke-linecap: round;
+}
+
+.not-verified-alert {
+    background-color: #d4efff;
+}
+
+.unread-notification-lists {
+    min-height: 120px
+}
+
+.dashboard-banner-container {
+    margin-top: 125px;
+
+    @media (max-width: $screen-sm-max) {
+        margin-top: 25px;
+    }
+
+    .dashboard-banner {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 375px;
+
+        .rtl & {
+            left: 0;
+            right: auto;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            position: relative;
+            height: auto;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+.dashboard {
+    .account-balance {
+
+        .account-balance-icon {
+            width: 65px;
+            height: 65px;
+        }
+    }
+}
+
+.dashboard-stats {
+    background-color: #FFFFFF !important;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #FFFFFF !important;
+        box-shadow: 0 8px 23px 0 rgb(62 73 84 / 15%);
+        transition: all 0.5s ease;
+    }
+
+    .stat-icon {
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        img {
+            width: 42px;
+            height: 42px;
+        }
+
+        &.requests {
+            background-image: linear-gradient(135deg, #11c99c, #00e31d);
+            box-shadow: 0 3px 10px 0px rgb(91 255 113 / 40%);
+        }
+
+        &.monthly-sales {
+            background-image: linear-gradient(135deg, #F761A1 10%, #8C1BAB 100%);
+            box-shadow: 0 3px 10px 0px rgb(236 108 224 / 40%);
+        }
+
+        &.support-messages {
+            background-image: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+            box-shadow: 0 3px 10px 0px rgb(255 85 85 / 26%);
+        }
+
+        &.comments {
+            background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+            box-shadow: 0 3px 10px 0px rgb(68 198 206 / 40%);
+        }
+
+        &.stat-icon-chapters {
+            background-image: linear-gradient(to bottom, #11c99c, #00e31d);
+        }
+
+        &.stat-icon-sessions {
+            background-image: linear-gradient(to bottom, #ffb199, #ff0844);
+        }
+
+        &.stat-icon-pending-quizzes {
+            background-image: linear-gradient(to bottom, #f761a1, #8c1bab);
+        }
+
+        &.stat-icon-pending-assignments {
+            background-image: linear-gradient(to bottom, #3c8ce7, #00eaff);
+        }
+    }
+
+    .course-statistic-stat-icons & {
+        @media (max-width: $screen-xs-max) {
+            .stat-icon {
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
+
+.noticeboard {
+    .noticeboard-item {
+        border-bottom: 1px solid #ececec;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+.monthly-sales-card {
+    .monthly-sales-chart {
+        height: max-content;
+    }
+}
+
+.panel-shadow {
+    box-shadow: 0px 12px 23px 0px rgb(62 73 84 / 4%);
+}

@@ -1,0 +1,40 @@
+
+.region-map {
+    height: 400px;
+    border-radius: 15px;
+    z-index: 10;
+    position: relative;
+
+
+    .marker {
+        position: absolute;
+        margin: auto;
+        top: calc(50% - 70px);
+        left: 0;
+        right: 0;
+        z-index: 500;
+        transition: all 200ms cubic-bezier(0.47, 0, 0.75, 0.72);
+
+        &.dragging {
+            transform: scale(0.8) translateY(12px);
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        height: 360px;
+    }
+}
+
+.available-meetings {
+    margin-right: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: solid 1px var(--primary);
+    color: var(--primary);
+    font-size: 0.875rem;
+
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

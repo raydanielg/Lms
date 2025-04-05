@@ -1,0 +1,92 @@
+.shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.05), 0 15px 12px rgba(0, 0, 0, 0.02);
+
+    @media (max-width: $screen-sm-max) {
+        padding: 20px 10px;
+    }
+}
+
+.customers-testimonials {
+    .shadow-effect {
+        p {
+            font-family: inherit;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 0 0 17px 0;
+            font-weight: 300;
+        }
+    }
+
+    .item {
+        text-align: center;
+        margin-bottom: 70px;
+        opacity: .65;
+        -webkit-transform: scale3d(0.8, 0.8, 1);
+        transform: scale3d(0.8, 0.8, 1);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: $screen-sm-max) {
+            padding: 0 15px;
+        }
+    }
+
+    .owl-item.active.center {
+        .item {
+            opacity: 1;
+            -webkit-transform: scale3d(1.0, 1.0, 1);
+            transform: scale3d(1.0, 1.0, 1);
+        }
+    }
+}
+
+.customers-testimonials.owl-carousel {
+    .owl-dots {
+        .owl-dot.active {
+            span {
+                background: var(--primary);
+                transform: translate3d(0px, -50%, 0px);
+                border-width: 3px;
+            }
+        }
+
+        .owl-dot {
+            &:hover {
+                span {
+                    background: var(--primary);
+                    transform: translate3d(0px, -50%, 0px);
+                    border-width: 3px;
+                }
+            }
+
+            display: inline-block;
+
+            span {
+                border-radius: 50px;
+                background: #ffffff;
+                border: solid 1px #d4d4d4;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                margin: 0 2px 5px;
+                transform: translate3d(0px, -50%, 0px);
+                transform-origin: 50% 50% 0;
+                transition: all 250ms ease-out 0s;
+
+                @media (max-width: $screen-xs-max) {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}

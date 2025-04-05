@@ -1,0 +1,20 @@
+body {
+    &.rtl {
+        direction: rtl;
+        font-family: var(--font-family-rtl) !important;
+        text-align: right;
+
+        .text-left {
+            text-align: right !important;
+        }
+
+        .text-right {
+            text-align: left !important;
+        }
+
+        .dropdown-menu {
+            text-align: right !important;
+        }
+    }
+}
+

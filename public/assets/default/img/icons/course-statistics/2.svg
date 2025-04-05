@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+    <g data-name="vuesax/linear/clipboard-text">
+        <path d="M0 0h12.25" transform="translate(14 21.35)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+        <path data-name="Vector" d="M0 0h7.665" transform="translate(14 28.35)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+        <path data-name="Vector" d="M3.5 7h7C14 7 14 5.25 14 3.5 14 0 12.25 0 10.5 0h-7C1.75 0 0 0 0 3.5S1.75 7 3.5 7z" transform="translate(14 3.5)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+        <path data-name="Vector" d="M22.75 0c5.827.315 8.75 2.467 8.75 10.465v10.5c0 7-1.75 10.5-10.5 10.5H10.5c-8.75 0-10.5-3.5-10.5-10.5v-10.5C0 2.485 2.923.315 8.75 0" transform="translate(5.25 7.035)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg data-name="Iconly/Light/Activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(2 1.5)">
+        <path d="M0 4.989 2.993 1.1l3.414 2.68L9.336 0" transform="translate(5.245 8.293)" style="fill:none;stroke:#818894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px"/>
+        <circle cx="1.922" cy="1.922" r="1.922" transform="translate(16.073 .778)" style="fill:none;stroke:#818894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px"/>
+        <path d="M12.146 0H4.879C1.867 0 0 2.133 0 5.144v8.082c0 3.011 1.831 5.135 4.879 5.135h8.6c3.011 0 4.879-2.124 4.879-5.135V6.188" transform="translate(.778 1.62)" style="fill:none;stroke:#818894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px"/>
+    </g>
+</svg>

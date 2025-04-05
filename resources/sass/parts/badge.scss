@@ -1,0 +1,30 @@
+.badge {
+    line-height: $badge-line-height;
+    font-weight: normal;
+    pointer-events: none;
+}
+
+.badge-outlined {
+    color: $white;
+    padding: $badge-circle-padding;
+    @include border-radius($badge-circle-border-radius);
+}
+
+@each $color, $value in $theme-colors {
+    .badge-outlined-#{$color} {
+        @include badge-outlined-variant($value);
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .badge-circle-#{$color} {
+        width: $badge-circle-width;
+        height: $badge-circle-height;
+        font-size: $badge-circle-font-size;
+        @include border-radius($badge-circle-border-radius);
+        padding: $badge-circle-padding;
+        line-height: $badge-circle-line-height;
+
+        @include badge-circle-variant($value);
+    }
+}

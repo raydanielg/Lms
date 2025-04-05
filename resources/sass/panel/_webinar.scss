@@ -1,0 +1,153 @@
+
+.input-label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.19;
+    color: $dark-blue;
+
+    .braces {
+        font-size: 11px;
+    }
+}
+
+.category-filter-title {
+    position: relative;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.19;
+    color: $dark-blue;
+
+    &:after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+
+        .rtl & {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+.accordion-content-wrapper {
+    position: relative;
+}
+
+.webinar-form {
+
+    .webinar-category-filters {
+        padding: 24px 28px;
+        border-radius: 10px;
+        box-shadow: 0px 12px 23px 0px rgb(62 73 84 / 4%);
+        background-color: #ffffff;
+        border: 1px solid $gray-200;
+    }
+
+    .table-responsive {
+        overflow: visible;
+
+        @media (max-width: $screen-sm-max) {
+            overflow: auto;
+        }
+    }
+
+    .table {
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 30px -10px rgba(0, 0, 0, 0.1);
+        border: 1px solid $gray-200;
+
+        th {
+            border-top: 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #818894;
+        }
+
+        .btn-gray200 {
+            font-size: 14px;
+        }
+    }
+}
+
+.range-time-picker {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 0 .5rem .5rem 0;
+    width: 100%;
+
+    input {
+        border: none;
+        max-width: 60px;
+        padding: 0 0 0 1rem;
+    }
+}
+
+.webinar-progress {
+
+    .progress-item {
+        padding: 0 25px;
+        border-left: 1px solid $gray-300;
+
+        button {
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: var(--primary);
+                transition: all 0.3s ease;
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+            border-left: none;
+        }
+
+        .progress-icon {
+            background-color: $gray-200;
+            width: 48px;
+            height: 48px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: var(--primary);
+                transition: all 0.3s ease;
+            }
+
+            &.active {
+                background-color: transparent;
+                background-image: linear-gradient(to bottom, #9effc1, var(--primary));
+            }
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .progress-item {
+            border-left: 0;
+            padding: 0;
+            margin: 5px 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.course-statistic-cards-shadow {
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.04);
+
+    .statistic-pie-charts {
+        height: 197px;
+    }
+
+    .cart-label-color {
+        width: 15px;
+        min-width: 15px;
+        height: 15px;
+    }
+}

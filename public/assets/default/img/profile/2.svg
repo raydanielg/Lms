@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".146" x2=".854" y1=".854" y2=".146" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#364aff"/>
+            <stop offset="1" stop-color="#fc54ff"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="-.524" x2="1.174" y1="1.206" y2="-.15" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#b31de7"/>
+            <stop offset=".5" stop-color="#fa9bfe"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="-1.279" x2=".933" y1="1.601" y2=".287" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#8d00db"/>
+            <stop offset="1" stop-color="#fda0ff"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1="-.787" x2="1.295" y1="1.641" y2="-.156" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fc54ff"/>
+            <stop offset=".611" stop-color="#febfff"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-5" x1=".4" x2="1.096" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#230be0" stop-opacity=".659"/>
+            <stop offset=".014" stop-color="#3110e2" stop-opacity=".651"/>
+            <stop offset=".064" stop-color="#5b1ee8" stop-opacity=".62"/>
+            <stop offset=".118" stop-color="#822bee" stop-opacity=".58"/>
+            <stop offset=".178" stop-color="#a336f2" stop-opacity=".541"/>
+            <stop offset=".243" stop-color="#bf3ff6" stop-opacity=".502"/>
+            <stop offset=".316" stop-color="#d647fa" stop-opacity=".451"/>
+            <stop offset=".4" stop-color="#e74dfc" stop-opacity=".396"/>
+            <stop offset=".503" stop-color="#f351fe" stop-opacity=".329"/>
+            <stop offset=".644" stop-color="#fa53ff" stop-opacity=".235"/>
+            <stop offset="1" stop-color="#fc54ff" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-6" x1="-1.35" x2="1.016" y1="2.36" y2="-.006" xlink:href="#linear-gradient-4"/>
+        <linearGradient id="linear-gradient-7" x1=".024" x2="1.126" y1="1.68" y2="-.571" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fc54ff"/>
+            <stop offset=".493" stop-color="#feaaff"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-8" x1=".167" x2="1.1" y1=".975" y2="-.333" xlink:href="#linear-gradient-4"/>
+        <linearGradient id="linear-gradient-9" x1=".04" x2="1.183" y1="1.136" y2="-.431" xlink:href="#linear-gradient-4"/>
+        <radialGradient id="radial-gradient" cx=".5" cy=".5" r=".505" gradientUnits="objectBoundingBox">
+            <stop offset=".095" stop-color="#8d00db" stop-opacity=".659"/>
+            <stop offset=".259" stop-color="#9b0be0" stop-opacity=".541"/>
+            <stop offset=".57" stop-color="#c026eb" stop-opacity=".314"/>
+            <stop offset=".99" stop-color="#fb53ff" stop-opacity=".008"/>
+            <stop offset="1" stop-color="#fc54ff" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="clip-path">
+            <path id="Rectangle_329" fill="#fff" stroke="#707070" d="M0 0H32V32H0z" data-name="Rectangle 329" transform="translate(1280 2185)"/>
+        </clipPath>
+    </defs>
+    <g id="Mask_Group_71" clip-path="url(#clip-path)" data-name="Mask Group 71" transform="translate(-1280 -2185)">
+        <g id="vinyl" transform="translate(1280 2185)">
+            <circle id="Ellipse_112" cx="16" cy="16" r="16" fill="url(#linear-gradient)" data-name="Ellipse 112"/>
+            <circle id="Ellipse_113" cx="16" cy="16" r="16" fill="url(#radial-gradient)" data-name="Ellipse 113"/>
+            <path id="Path_924" fill="url(#linear-gradient-2)" d="M27.411 10.542q-3.224-.057-6.447-.078.027 1.936.036 3.876a1.9 1.9 0 0 1 .959-.255 1.915 1.915 0 1 1 0 3.83A1.9 1.9 0 0 1 21 17.66q-.008 1.938-.035 3.876 3.224-.021 6.447-.078A7.647 7.647 0 0 0 29.81 16a7.646 7.646 0 0 0-2.399-5.458z" data-name="Path 924"/>
+            <path id="Path_925" fill="url(#linear-gradient-3)" d="M23.318 17.351a1.937 1.937 0 0 1-1.361.564 1.915 1.915 0 1 1 0-3.83 1.937 1.937 0 0 1 1.361.564c1.388-1.385 2.76-2.758 4.093-4.107a8.129 8.129 0 0 0-5.543-2.362c-1.193 2.592-2.468 5.2-3.749 7.819 1.281 2.615 2.556 5.228 3.749 7.82a8.129 8.129 0 0 0 5.543-2.361c-1.332-1.35-2.7-2.722-4.093-4.107z" data-name="Path 925"/>
+            <path id="Path_926" fill="url(#linear-gradient-4)" d="M21.938 12.01c-.94 1.324-1.9 2.656-2.858 3.99.961 1.334 1.918 2.665 2.858 3.99a3.99 3.99 0 1 0 0-7.979zm.023 4.947a.958.958 0 1 1 .963-.957.957.957 0 0 1-.962.958z" data-name="Path 926"/>
+            <path id="Path_927" fill="url(#linear-gradient-5)" d="M29.811 16a8.134 8.134 0 0 1-7.942 7.819 7.82 7.82 0 0 1 0-15.639A8.134 8.134 0 0 1 29.811 16z" data-name="Path 927"/>
+            <path id="Path_928" fill="url(#linear-gradient-6)" d="M4.592 8.344a119.039 119.039 0 0 0 0 15.313 1.061 1.061 0 0 0 1 .969q7.656.245 15.313.163a.992.992 0 0 0 .962-.969q.189-7.819 0-15.639a.992.992 0 0 0-.962-.969q-7.655-.082-15.311.163a1.061 1.061 0 0 0-1.002.969z" data-name="Path 928"/>
+            <path id="Path_929" fill="url(#linear-gradient-7)" d="M6.3 18.99q.04 1.888.13 3.776 6.784.154 13.568.112.025-1.919.036-3.839c-2.283-.954-4.582-1.92-6.878-2.879-2.3.958-4.586 1.908-6.855 2.83z" data-name="Path 929"/>
+            <path id="Path_930" fill="url(#linear-gradient-8)" d="M6.429 9.234Q6.2 14.112 6.3 18.99q6.867.068 13.733.049c-4.559-3.293-9.236-6.656-13.6-9.8z" data-name="Path 930"/>
+            <path id="Path_931" fill="url(#linear-gradient-9)" d="M20 9.122q.064 4.958.036 9.917A21.339 21.339 0 0 1 9.47 13.225a18.709 18.709 0 0 1-3.041-3.991Q13.213 9.08 20 9.122z" data-name="Path 931"/>
+        </g>
+    </g>
+</svg>

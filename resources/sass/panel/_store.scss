@@ -1,0 +1,23 @@
+.product-images-input-group {
+
+    input {
+        border-radius: 0 !important;
+    }
+
+    .add-btn,.remove-btn {
+        height: 40px;
+        max-height: 40px;
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+.panel-sidebar-store-sales-circle-badge {
+    width: 20px;
+    height: 20px;
+    font-size: .7rem;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1.58;
+    color: #fff;
+    background-color: $danger;
+}

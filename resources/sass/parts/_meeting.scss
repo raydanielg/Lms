@@ -1,0 +1,98 @@
+.time-sheet {
+
+    .remove-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #ffffff;
+        padding: 2px;
+        width: 16px;
+        height: 16px;
+        box-shadow: 0 3px 6px 0 rgba(246, 60, 60, 0.28);
+        position: absolute;
+        left: -6px;
+        top: -6px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            line-height: 0;
+            color: #fff;
+        }
+    }
+
+    .meeting-type-time {
+        position: absolute;
+        left: 20px;
+        top: -16px;
+    }
+}
+
+.add-time-sheet {
+    direction: ltr !important;
+
+    .clock-box {
+        top: -100px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        padding-bottom: 200px;
+
+        .clock-box {
+            top: 0;
+        }
+    }
+}
+
+.clockpicker-popover {
+    display: block !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    @media (max-width: $screen-sm-max) {
+        left: 50% !important;
+        transform: translate(-50%, 0) !important;
+    }
+
+    .popover-title {
+        display: none !important;
+    }
+
+    .clockpicker-canvas-bearing, .clockpicker-canvas-fg, .clockpicker-canvas-bg {
+        fill: var(--primary) !important;
+    }
+
+    .clockpicker-canvas line {
+        stroke: var(--primary) !important;
+    }
+
+    .clockpicker-am-pm-block {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .popover-content {
+        background-color: #ffffff !important;
+    }
+}
+
+.pulsate {
+    -webkit-animation: pulsate .5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.4;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}

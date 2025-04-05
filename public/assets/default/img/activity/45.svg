@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_284" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 284" transform="translate(1653 176)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}.cls-5{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_45" clip-path="url(#clip-path)" data-name="Mask Group 45" transform="translate(-1653 -176)">
+        <g id="art-and-design" transform="translate(1653 176)">
+            <g id="Group_542" data-name="Group 542">
+                <path id="Path_609" d="M28 58.667h8v4h-8z" class="cls-3" data-name="Path 609"/>
+                <path id="Path_610" d="M40 53.333v5.333H24v-5.333z" class="cls-3" data-name="Path 610"/>
+            </g>
+            <path id="Path_611" fill="#bdd3dd" d="M40 53.333H24V42.44a21.333 21.333 0 1 1 16 0z" data-name="Path 611"/>
+            <g id="Group_543" data-name="Group 543">
+                <path id="Path_612" d="M34.666 24l-.011 20-2.664 4-2.659-4 .011-20z" class="cls-3" data-name="Path 612"/>
+                <path id="Path_613" d="M34.666 18.667V24h-5.329v-5.333h5.333z" class="cls-3" data-name="Path 613"/>
+                <path id="Path_614" d="M48 4.008V12H32V4a2.675 2.675 0 0 1 2.667-2.667h10.665A2.676 2.676 0 0 1 48 4.008z" class="cls-3" data-name="Path 614"/>
+                <path id="Path_615" d="M32 9.333V12h-4l-12-.007v-8a2.675 2.675 0 0 1 2.667-2.667h10.68A2.6 2.6 0 0 1 32 3.877v5.456z" class="cls-3" data-name="Path 615"/>
+            </g>
+            <g id="Group_544" data-name="Group 544">
+                <path id="Path_616" d="M16 13.333l12 .007v-2.667l-10.667-.007V4a1.333 1.333 0 0 1 1.333-1.333h10.677a1.325 1.325 0 0 1 1.323 1.285v.041h.012V4h-.012v1.333h-9.334V8h9.333v9.333h-1.333A1.333 1.333 0 0 0 28 18.667V44a1.334 1.334 0 0 0 .223.737l2.653 4a1.331 1.331 0 0 0 2.216.005l2.68-4A1.334 1.334 0 0 0 36 44V18.667a1.333 1.333 0 0 0-1.333-1.333h-1.335V8h9.333V5.333h-9.333V4h.011v-.055a1.333 1.333 0 0 1 1.323-1.279h10.666A1.341 1.341 0 0 1 46.666 4v6.667H36v2.667l12 .007a1.333 1.333 0 0 0 1.333-1.333v-8a4.008 4.008 0 0 0-4-4L34.666 0A3.974 3.974 0 0 0 32 1.039 3.958 3.958 0 0 0 29.344 0H18.666a4.008 4.008 0 0 0-4 4v8A1.333 1.333 0 0 0 16 13.333zM33.332 20v2.667h-2.666V20zm-1.341 25.6l-1.325-2V25.333h2.667V43.6z" class="cls-5" data-name="Path 616"/>
+                <path id="Path_617" d="M22.666 49.333h2.667v-6.9A1.333 1.333 0 0 0 24.5 41.2a20 20 0 0 1-11.045-26.04l.011-.026-2.469-1a22.675 22.675 0 0 0 11.669 29.181v6.019z" class="cls-5" data-name="Path 617"/>
+                <path id="Path_618" d="M53 14.115l-2.471 1.007a20.007 20.007 0 0 1-11 26.068l-.029.01a1.333 1.333 0 0 0-.833 1.236v6.9h2.667v-6.021A22.679 22.679 0 0 0 53 14.115z" class="cls-5" data-name="Path 618"/>
+                <path id="Path_619" d="M20 54.667h2.667v4A1.333 1.333 0 0 0 24 60h2.667v2.667A1.333 1.333 0 0 0 28 64h8a1.333 1.333 0 0 0 1.333-1.333V60H40a1.333 1.333 0 0 0 1.333-1.333v-4H44V52H20zm14.667 6.667h-5.335V60h5.333zm4-4H25.332v-2.667h13.334z" class="cls-5" data-name="Path 619"/>
+            </g>
+        </g>
+    </g>
+</svg>

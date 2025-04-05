@@ -1,0 +1,12 @@
+.time-counter-down {
+    .time-item {
+        width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

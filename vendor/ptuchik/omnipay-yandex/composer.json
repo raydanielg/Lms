@@ -1,0 +1,39 @@
+{
+    "name": "ptuchik/omnipay-yandex",
+    "type": "library",
+    "description": "Yandex Money gateway for Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "yandex",
+        "purchase"
+    ],
+    "homepage": "https://github.com/ptuchik/omnipay-yandex",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Avik Aghajanyan",
+            "email": "avik.aghajanyan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Yandex\\": "src/"
+        }
+    },
+    "require": {
+        "omnipay/common": "^3",
+        "yandex-money/yandex-checkout-sdk-php": "^1.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    }
+}

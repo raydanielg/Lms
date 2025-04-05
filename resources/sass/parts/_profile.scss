@@ -1,0 +1,377 @@
+
+.user-reward-badges {
+    img {
+        width: 32px;
+        height: 32px;
+    }
+
+    &.badges-lg {
+        .badges-item {
+            border: none;
+        }
+
+        img {
+            width: 128px;
+            height: 128px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+.user-profile-info {
+    top: -250px;
+    margin-bottom: -250px;
+
+    @media (max-width: $screen-sm-max) {
+        top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .following-status {
+        border-left: 2px solid $gray-300;
+
+        .rtl & {
+            border-right: 2px solid $gray-300;
+            border-left: none;
+        }
+    }
+}
+
+.profile-info-box {
+    @media (max-width: 568px) {
+        flex-direction: column;
+        position: relative;
+
+        &:not(.product-show__profile-info-box) {
+            top: -60px;
+            margin-bottom: -60px;
+        }
+
+        .user-details {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+
+            .stars-card {
+                justify-content: center;
+            }
+        }
+
+        .user-actions {
+            flex-direction: row !important;
+            margin-top: 15px;
+            width: 100%;
+            justify-content: center;
+
+            button.btn-border-white {
+                margin-top: 0 !important;
+                margin-left: 10px;
+                border-radius: 5px !important;
+            }
+
+
+        }
+    }
+}
+
+.user-profile-avatar {
+    width: 190px;
+    min-width: 190px;
+    max-width: 190px;
+    height: 190px;
+    border-radius: 50%;
+
+    img {
+        border-radius: 50%;
+    }
+
+    @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
+        height: 120px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        width: 90px;
+        min-width: 90px;
+        max-width: 90px;
+        height: 90px;
+    }
+}
+
+.user-profile-state {
+    .state-icon {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        &.orange {
+            box-shadow: 0 3px 6px 0 rgba(239, 147, 106, 0.30);
+            border: solid 2px #ef9d69;
+        }
+
+        &.blue {
+            box-shadow: 0 3px 6px 0 rgb(106 195 239 / 30%);
+            border: solid 2px #00a1d9;
+        }
+
+        &.green {
+            box-shadow: 0 3px 6px 0 rgb(67 212 119 / 15%);
+            border: solid 2px #4fb949;
+        }
+
+        &.royalblue {
+            box-shadow: 0 3px 6px 0 rgb(111 66 193 / 15%);
+            border: solid 2px #a855ff;
+        }
+    }
+}
+
+.pick-a-time {
+    .available-times, .meeting-type-reserve {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .rtl & {
+            margin-right: 0;
+            margin-left: 20px;
+
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+
+        label {
+            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 10px;
+            border: solid 1px var(--primary);
+            color: var(--primary);
+            font-size: 0.875rem;
+        }
+
+        &.disabled {
+            label {
+                border: solid 1px $gray-200;
+                color: $gray;
+            }
+        }
+
+        input[type=checkbox], input[type=radio] {
+            visibility: hidden;
+            display: none;
+            transition: all 0.3s;
+
+            &:checked {
+                & + label {
+                    box-shadow: 0 3px 6px 0 rgba(1, 201, 14, 0.29);
+                    border: solid 1px var(--primary);
+                    background-color: var(--primary);
+                    color: #ffffff;
+                    transition: all 0.3s;
+                }
+            }
+
+            &:hover {
+                & + label {
+                    border: solid 1px var(--primary);
+                    background-color: #1FB354;
+                    color: #ffffff;
+                    transition: all 0.3s;
+                }
+            }
+
+        }
+
+        .reserved-item {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            transform: translate(0, -8px);
+        }
+    }
+
+    .meeting-type-reserve {
+        margin-right: 0;
+
+        label {
+            border-color: $gray-200;
+            color: $gray;
+            border-radius: 0;
+        }
+
+        &:nth-child(1) {
+            label {
+                border-radius: 10px 0 0 10px;
+                border-right: 0 !important;
+            }
+        }
+
+        &:nth-child(2) {
+            label {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+
+        &.disabled {
+            label {
+                color: $gray !important;
+                background-color: $gray-200 !important;
+                border-color: $gray-200 !important;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+.inline-reservation-calender {
+
+    .datepicker-plot-area {
+        font-family: $font-family-base;
+        background-color: var(--secondary);
+        padding: 0;
+        border: solid 1px $gray-300;
+        border-radius: 15px;
+
+        .datepicker-navigator {
+            padding: 15px 0;
+
+            .pwt-btn {
+                background-color: transparent;
+                color: #ffffff;
+            }
+        }
+
+        .toolbox {
+            display: none;
+            margin-top: 0;
+            background-color: #ffffff;
+        }
+
+        .datepicker-day-view {
+            background-color: #ffffff;
+
+            .table-days td {
+                width: 62px;
+                height: 60px;
+
+                span {
+                    color: $gray !important;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: var(--primary);
+                        transition: all 0.5s;
+                        color: #ffffff !important;
+                    }
+                }
+
+                &.selected span {
+                    background-color: var(--primary);;
+                    text-shadow: none;
+                    color: #ffffff !important;
+                    font-weight: bold;
+                }
+
+                &.disabled span {
+                    //background-color: $info-light;
+                    background-color: #ececec;
+                }
+
+            }
+        }
+    }
+}
+
+
+.inline-reservation-calender .pwt-btn-prev, .inline-reservation-calender .pwt-btn-next {
+    direction: ltr;
+}
+
+.user-offline-alert {
+    background-color: $info-light;
+    border: solid 1px $gray-300;
+    border-radius: 10px;
+}
+
+.offline-icon {
+    background-color: #8ad3ff;
+    padding: 15px;
+
+    &.offline-icon-right {
+        border-radius: 0 10px 10px 0;
+
+        .rtl & {
+            border-radius: 10px 0 0 10px;
+        }
+    }
+
+    &.offline-icon-left {
+        border-radius: 10px 0 0 10px;
+
+        .rtl & {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+    img {
+        width: 43px;
+        min-width: 43px;
+        max-width: 43px;
+        height: 43px;
+        min-height: 43px;
+        max-height: 43px;
+    }
+}
+
+.appointment-timezone-icon {
+    width: 84px;
+    height: 62px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days {
+    width: 100% !important;
+    float: left !important;
+    direction: ltr !important;
+
+    .rtl & {
+        float: right !important;
+        direction: rtl !important;
+    }
+}
+
+.datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row {
+    width: 100%;
+    height: 25px;
+    float: left;
+    display: inline-flex;
+
+    .header-row-cell {
+        float: left;
+    }
+
+    .rtl &, .rtl & .header-row-cell {
+        float: right;
+    }
+}

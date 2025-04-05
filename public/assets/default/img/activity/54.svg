@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_297" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 297" transform="translate(1631 176)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}.cls-4{fill:#bdd3dd}.cls-5{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_54" clip-path="url(#clip-path)" data-name="Mask Group 54" transform="translate(-1631 -176)">
+        <g id="ui" transform="translate(1631 176)">
+            <path id="Path_731" d="M62.667 12v45.333a5.333 5.333 0 0 1-5.333 5.333H6.667a5.333 5.333 0 0 1-5.333-5.333V12z" class="cls-3" data-name="Path 731"/>
+            <path id="Path_732" d="M62.667 6.667V12H1.333V6.667a5.333 5.333 0 0 1 5.334-5.334h50.666a5.333 5.333 0 0 1 5.334 5.334z" class="cls-4" data-name="Path 732"/>
+            <g id="Group_584" data-name="Group 584">
+                <path id="Path_733" d="M41.333 29.333h16v16h-16z" class="cls-3" data-name="Path 733"/>
+                <path id="Path_734" d="M22.667 45.333h18.666v12H22.667z" class="cls-3" data-name="Path 734"/>
+                <path id="Path_735" d="M22.667 17.333h18.666v12H22.667z" class="cls-3" data-name="Path 735"/>
+                <path id="Path_736" d="M6.667 29.333h16v16h-16v-16z" class="cls-3" data-name="Path 736"/>
+            </g>
+            <g id="Group_585" data-name="Group 585">
+                <path id="Path_737" d="M41.333 17.333h16v12h-16z" class="cls-4" data-name="Path 737"/>
+                <path id="Path_738" d="M41.333 45.333h16v12h-16z" class="cls-4" data-name="Path 738"/>
+                <path id="Path_739" d="M22.667 29.333h18.666v16H22.667z" class="cls-4" data-name="Path 739"/>
+                <path id="Path_740" d="M6.667 45.333h16v12h-16v-12z" class="cls-4" data-name="Path 740"/>
+                <path id="Path_741" d="M6.667 17.333h16v12h-16v-12z" class="cls-4" data-name="Path 741"/>
+            </g>
+            <g id="Group_586" data-name="Group 586">
+                <path id="Path_742" d="M57.333 0H6.667A6.675 6.675 0 0 0 0 6.667v50.666A6.675 6.675 0 0 0 6.667 64h50.666A6.675 6.675 0 0 0 64 57.333V6.667A6.674 6.674 0 0 0 57.333 0zm4 57.333a4 4 0 0 1-4 4H6.667a4 4 0 0 1-4-4V6.667a4 4 0 0 1 4-4h50.666a4 4 0 0 1 4 4v50.666z" class="cls-5" data-name="Path 742"/>
+                <path id="Path_743" d="M5.333 10.667h53.334v2.667H5.333z" class="cls-5" data-name="Path 743"/>
+                <path id="Path_744" d="M6.667 5.333h2.666V8H6.667z" class="cls-5" data-name="Path 744"/>
+                <path id="Path_745" d="M12 5.333h2.667V8H12z" class="cls-5" data-name="Path 745"/>
+                <path id="Path_746" d="M54.667 5.333h2.667V8h-2.667z" class="cls-5" data-name="Path 746"/>
+                <path id="Path_747" d="M57.333 16H6.667a1.333 1.333 0 0 0-1.333 1.333v40a1.333 1.333 0 0 0 1.333 1.333h50.666a1.333 1.333 0 0 0 1.333-1.333v-40A1.333 1.333 0 0 0 57.333 16zM56 28H42.667v-9.333H56zM24 44V30.667h16V44zm16 2.667V56H24v-9.333zM21.333 44H8V30.667h13.333V44zM24 28v-9.333h16V28zm18.667 2.667H56V44H42.667zm-21.333-12V28H8v-9.333h13.333zM8 46.667h13.333V56H8zM42.667 56v-9.333H56V56z" class="cls-5" data-name="Path 747"/>
+            </g>
+        </g>
+    </g>
+</svg>

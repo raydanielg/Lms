@@ -1,0 +1,22 @@
+.bootstrap-tagsinput {
+    display: block !important;
+    box-shadow: none !important;
+    border: 1px solid $gray-300 !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: #343434 !important;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    input {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tag {
+        margin-top: 2px;
+    }
+}

@@ -1,0 +1,112 @@
+/* ---------- CSS RESET ---------- */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure, figcaption, address {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+table {
+    border-spacing: 0;
+
+    th,
+    td {
+        vertical-align: middle !important;
+    }
+}
+
+caption, th {
+    text-align: center;
+}
+
+a:link, a:visited, a:active {
+    -webkit-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover, a:focus {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+* {
+    outline: none !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.gm-style {
+    font-family: $font-family-base !important;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+svg {
+    overflow: auto;
+    vertical-align: inherit;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+body.modal-open, body.swal2-shown {
+    padding-right: 0 !important;
+}
+
+body {
+    font-family: var(--font-family-base) !important;
+    overflow: hidden;
+    background-color: var(--body_bg, #ffffff) !important;
+
+    @media (max-width: $screen-xs-max) {
+        font-size: 14px;
+    }
+}
+
+.custom-switch .custom-control-label::before {
+    top: -.11rem;
+}
+
+.form-control {
+
+    &:focus {
+        border-color: var(--primary) !important;
+    }
+}

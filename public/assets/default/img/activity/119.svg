@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="64" viewBox="0 0 60 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bdd3dd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #1f3b64;
+      }
+    </style>
+  </defs>
+  <g id="exam" transform="translate(-2)">
+    <g id="open">
+      <path id="Path_2184" data-name="Path 2184" class="cls-1" d="M58,12H50a2.675,2.675,0,0,1-2.667-2.667v-8Z"/>
+      <path id="Path_2185" data-name="Path 2185" class="cls-2" d="M58,12V60a2.675,2.675,0,0,1-2.667,2.667H12.667A2.675,2.675,0,0,1,10,60V4a2.675,2.675,0,0,1,2.667-2.667H47.333v8A2.675,2.675,0,0,0,50,12Z"/>
+      <circle id="Ellipse_369" data-name="Ellipse 369" class="cls-1" cx="16" cy="16" r="16" transform="translate(3.334 1.333)"/>
+      <path id="Path_2186" data-name="Path 2186" class="cls-2" d="M54,38.667h6.667V44H54Z"/>
+      <path id="Path_2187" data-name="Path 2187" class="cls-1" d="M54,38.667V44H10L6,41.333l4-2.667H54Z"/>
+      <g id="Group_1704" data-name="Group 1704">
+        <path id="Path_2188" data-name="Path 2188" class="cls-3" d="M56.667,60a1.333,1.333,0,0,1-1.333,1.333H12.667A1.333,1.333,0,0,1,11.333,60V49.333H8.667V60a4,4,0,0,0,4,4H55.333a4,4,0,0,0,4-4V49.333H56.667Z"/>
+        <path id="Path_2189" data-name="Path 2189" class="cls-3" d="M46,9.333a4,4,0,0,0,4,4h2.667V10.667H50a1.333,1.333,0,0,1-1.333-1.333V4.552l8,8V28h2.667V12a1.334,1.334,0,0,0-.391-.943L48.276.391A1.333,1.333,0,0,0,47.333,0h-8V2.667H46Z"/>
+        <path id="Path_2190" data-name="Path 2190" class="cls-3" d="M19.333,34.667A17.353,17.353,0,0,0,36.667,17.333H34A14.667,14.667,0,1,1,19.333,2.667V0a17.333,17.333,0,1,0,0,34.667Z"/>
+        <path id="Path_2191" data-name="Path 2191" class="cls-3" d="M60.667,37.333H58v-4A1.333,1.333,0,0,0,56.667,32h-20v2.667H55.333v2.667H10a1.342,1.342,0,0,0-.74.224l-4,2.667a1.333,1.333,0,0,0,0,2.219l4,2.667a1.342,1.342,0,0,0,.74.224H60.667A1.333,1.333,0,0,0,62,44V38.666A1.333,1.333,0,0,0,60.667,37.333Zm-52.267,4L10.4,40H52.667v2.667H10.4Zm50.933,1.333h-4V40h4Z"/>
+        <path id="Path_2193" data-name="Path 2193" class="cls-3" d="M15.333,49.333H28.667V52H15.333Z"/>
+        <path id="Path_2194" data-name="Path 2194" class="cls-3" d="M15.333,54.667H18v2.667H15.333Z"/>
+        <path id="Path_2195" data-name="Path 2195" class="cls-3" d="M20.667,54.667h2.667v2.667H20.667V54.667Z"/>
+      </g>
+      <path id="Path_2515" data-name="Path 2515" class="cls-3" d="M15.333,54.667H18v2.667H15.333Z" transform="translate(-3 -39)"/>
+      <path id="Path_2516" data-name="Path 2516" class="cls-3" d="M20.667,54.667h2.667v2.667H20.667V54.667Z" transform="translate(-3 -39)"/>
+      <path id="Path_2517" data-name="Path 2517" class="cls-3" d="M20.667,54.667h2.667v2.667H20.667V54.667Z" transform="translate(2.334 -39)"/>
+    </g>
+  </g>
+</svg>

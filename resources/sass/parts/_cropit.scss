@@ -1,0 +1,95 @@
+#avatarCropModalContainer {
+
+    #imageCropperContainer {
+
+        margin: 0 auto;
+        text-align: center;
+
+        > * {
+            margin: 0 auto;
+        }
+
+        .cropit-preview, .cropit-tools {
+            direction: ltr;
+        }
+
+        .cropit-preview {
+            background-color: #f9f9f9;
+            background-size: cover;
+            border: 1px solid #ccc;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            margin-top: 7px;
+            margin-bottom: 15px;
+            text-align: center;
+            z-index: 99;
+            overflow: hidden;
+            direction: ltr;
+        }
+
+        .cropit-preview-image {
+
+        }
+
+        .cropit-preview-image-container {
+            cursor: move;
+
+        }
+
+        .rotate-cw, .rotate-ccw {
+            font-size: 1.3em;
+        }
+
+        .image-size-label {
+            margin-top: 10px;
+        }
+
+        .cropit-image-zoom-input {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .cropit-image-input {
+            display: none;
+        }
+
+        .cropit-preview-background {
+            opacity: .2;
+            z-index: 33;
+        }
+
+    }
+}
+
+#coverCropperContainer {
+    width: 100%;
+
+    > .cropit-preview {
+        background-color: transparent;
+        background-size: cover;
+        height: 300px;
+        direction: ltr;
+    }
+
+    .cropit-preview-image {
+    }
+
+    .cropit-preview-image-container {
+        cursor: move;
+    }
+
+    .cropit-image-input {
+        display: none;
+    }
+
+    div.buttons {
+        text-align: left;
+        margin: 5px 0 5px 15px;
+
+        .rtl & {
+            text-align: right;
+        }
+    }
+}

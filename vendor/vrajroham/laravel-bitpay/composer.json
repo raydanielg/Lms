@@ -1,0 +1,60 @@
+{
+    "name": "vrajroham/laravel-bitpay",
+    "description": "BitPay wrapper for laravel",
+    "keywords": [
+        "bitpay",
+        "BTC",
+        "laravel"
+    ],
+    "homepage": "https://github.com/vrajroham/laravel-bitpay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vaibhavraj Roham",
+            "email": "vaibhavraj@vrajroham.me",
+            "homepage": "https://vrajroham.me",
+            "role": "Developer"
+        },
+        {
+            "name": "Alex Stewart",
+            "email": "iamalexstewart@gmail.com",
+            "homepage": "https://github.com/alexstewartja",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1",
+        "ext-json": "*",
+        "bitpay/sdk": "~7.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vrajroham\\LaravelBitpay\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vrajroham\\LaravelBitpay\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vrajroham\\LaravelBitpay\\LaravelBitpayServiceProvider"
+            ],
+            "aliases": {
+                "LaravelBitpay": "Vrajroham\\LaravelBitpay\\LaravelBitpayFacade"
+            }
+        }
+    }
+}

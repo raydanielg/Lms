@@ -1,0 +1,332 @@
+.panel-sidebar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 254px;
+    height: 100%;
+    box-shadow: 18px 0 35px 0 rgb(0 0 0 / 2%);
+    background-color: #ffffff;
+
+    .rtl & {
+        left: auto;
+        right: 0;
+    }
+
+    .panel-sidebar-close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: none;
+
+        .rtl & {
+            left: 20px;
+            right: auto;
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+        background-color: #ffffff;
+        top: 110%;
+        z-index: 570;
+        padding: 40px 20px 0 !important;
+        transition: top 0.4s cubic-bezier(0.43, 0.83, 0.54, 1.02), opacity .4s linear;
+
+        .panel-sidebar-close {
+            display: block;
+        }
+
+        &.nav-show {
+            top: 0;
+        }
+    }
+
+    .user-info {
+        .user-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+
+            img {
+                border-radius: 50px;
+            }
+        }
+
+        .user-name {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: $dark-blue;
+
+            @media (max-width: $screen-sm-max) {
+                h3 {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .create-new-user {
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.19;
+            color: #818894;
+            pointer-events: none;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            .user-avatar {
+                width: 70px;
+                height: 70px;
+            }
+
+            .user-name {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
+    .sidebar-user-stats {
+        .sidebar-user-stat-item {
+            strong {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.2;
+                color: $dark-blue;
+                pointer-events: none;
+            }
+
+            .stat-name {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.29;
+                color: $gray;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .sidebar-menu {
+        height: calc(100% - 405px);
+        overflow: auto;
+        padding-bottom: 35px;
+
+        &.has-user-group {
+            height: calc(100% - 455px);
+        }
+
+        &.without-bottom-image {
+            height: calc(100% - 298px);
+        }
+
+        @media (max-width: $screen-sm-max) {
+            height: calc(100% - 160px) !important;
+        }
+
+        .sidenav-item {
+            padding: 12px 0;
+
+            &.sidenav-item-active {
+                & > a, & > a * {
+                    font-weight: bold !important;
+                    color: var(--primary) !important;
+                }
+
+                svg {
+                    color: var(--primary) !important;
+                }
+
+                .assign-strock {
+                    svg, svg * {
+                        stroke: var(--primary) !important;
+                    }
+                }
+
+                .assign-fill {
+                    svg, svg * {
+                        fill: var(--primary) !important;
+                    }
+                }
+
+                circle, polyline {
+                    stroke: var(--primary) !important;
+                }
+
+                .cls-1, .cls-3 {
+                    fill: var(--primary) !important;
+                }
+
+                .sidenav-notification-icon {
+                    .cls-1, .cls-3 {
+                        fill: none !important;
+                        stroke: var(--primary) !important;
+                    }
+                }
+            }
+
+            .sidenav-item-icon {
+                width: 24px;
+                height: 24px;
+
+                .cls-1, .cls-3 {
+                    fill: var(--secondary);
+                }
+
+                &.sidenav-notification-icon {
+                    .cls-1 {
+                        fill: none;
+                        stroke: var(--secondary);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 1.5px
+                    }
+                }
+
+                svg {
+                    min-width: 100%;
+                    width: 100%;
+                    max-width: 100%;
+                    min-height: 100%;
+                    height: 100%;
+                    max-height: 100%;
+                    color: var(--secondary);
+                    stroke-width: 1.5px
+                }
+
+                &.assign-strock {
+                    svg, svg * {
+                        stroke: var(--secondary);
+                    }
+                }
+
+                &.assign-fill {
+                    svg, svg * {
+                        fill: var(--secondary);
+                    }
+                }
+            }
+
+            .sidenav-item-collapse {
+                position: relative;
+                padding: 10px 0 10px 34px;
+
+                .rtl & {
+                    padding: 10px 34px 10px 0;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 11px;
+                    height: 100%;
+                    width: 1px;
+                    background-color: var(--secondary);
+
+                    .rtl & {
+                        left: auto;
+                        right: 11px;
+                    }
+                }
+
+                li {
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -22px;
+                        width: 11px;
+                        height: 11px;
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                        border: solid 3px #ffffff;
+                        background-color: var(--secondary);
+                        border-radius: 50px;
+                        transform: translate(-50%, -50%);
+
+                        .rtl & {
+                            left: auto;
+                            right: -33px;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            font-weight: bold;
+                            color: var(--primary);
+                        }
+
+                        &:before {
+                            background-color: var(--primary);
+                        }
+                    }
+
+                    a {
+                        font-size: 14px;
+                        font-weight: normal;
+                        line-height: 1.29;
+                        color: #818894;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-create-class {
+        position: relative;
+        padding-top: 35px;
+
+        .sidebar-create-class-btn {
+            position: relative;
+            height: 110px;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-2%, -25%);
+                z-index: 5;
+                height: 140px;
+
+                .rtl & {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.xs-panel-nav {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid $gray-200;
+    z-index: 481;
+
+    .user-avatar {
+        width: 55px;
+        height: 55px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border-radius: 50px;
+
+        img {
+            border-radius: 50px;
+        }
+    }
+
+    .sidebar-toggler {
+        font-size: .8rem;
+        color: rgba(52, 52, 52, 0.5);
+        border: 1px solid rgba(52, 52, 52, 0.1) !important;
+    }
+}
+
+.webinar-icon {
+    color: $dark-blue;
+}

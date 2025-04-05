@@ -1,0 +1,84 @@
+@import "./../bootstrap/variables";
+@import "loading";
+@import "chat";
+@import "stream";
+
+html {
+    overflow: hidden;
+
+    @media (max-width: $screen-sm-max) {
+        overflow: auto;
+    }
+}
+
+body {
+    height: 100vh;
+
+    @media (max-width: $screen-sm-max) {
+        overflow: auto;
+    }
+}
+
+.agora-page {
+    .agora-navbar {
+
+    }
+
+    .agora-tabs {
+        width: 70px;
+        height: 100vh;
+        transition: all .3s ease;
+
+        .agora-tabs-icons {
+            width: 20px;
+            height: 20px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .agora-tabs-link-text, .tab-content {
+            display: none;
+            transition: all .4s ease;
+        }
+
+        &.show {
+            width: 373px;
+
+            .agora-tabs-link-text, .tab-content {
+                display: block;
+            }
+        }
+
+        &:not(.show) {
+            .nav-tabs {
+                flex-direction: column;
+
+                .nav-item {
+                    margin-top: 20px;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    a {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $screen-sm-max) {
+            width: 100% !important;
+            height: auto;
+
+            .nav-tabs {
+                padding-top: 15px;
+            }
+        }
+    }
+}

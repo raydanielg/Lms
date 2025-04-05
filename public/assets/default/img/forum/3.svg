@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.64" height="96.686" viewBox="0 0 98.64 96.686">
+    <defs>
+        <linearGradient id="25avwb8gfa" x1=".893" y1=".897" x2=".125" y2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="ca1i0siynb" x1=".893" y1=".897" x2=".125" y2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#9effc1"/>
+            <stop offset="1" stop-color="#43d477"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-474 -955)" data-name="Group 1723">
+        <rect data-name="Rectangle 831" width="74" height="74" rx="20" transform="rotate(22.5 -2149.396 1740.162)" style="fill:url(#25avwb8gfa);opacity:.1"/>
+        <rect data-name="Rectangle 833" width="8" height="8" rx="4" transform="rotate(51.98 -711.04 1066.947)" style="opacity:.05;fill:url(#25avwb8gfa)"/>
+        <rect data-name="Rectangle 834" width="5.358" height="5.358" rx="2.679" transform="rotate(51.98 -814.767 1010.654)" style="opacity:.31;fill:url(#ca1i0siynb)"/>
+        <rect data-name="Rectangle 832" width="8" height="8" rx="4" transform="rotate(51.98 -760.299 980.483)" style="opacity:.05;fill:url(#25avwb8gfa)"/>
+        <g data-name="Group 1720">
+            <path data-name="Path 2415" d="m46.529 44.011 8.15 6.948a9.92 9.92 0 0 1-7.735 3.758h-21.39l-9.614 8.238a2.556 2.556 0 0 1-2.666.371 2.491 2.491 0 0 1-1.442-2.185v-6.423A9.81 9.81 0 0 1 2 44.8V19.125a9.985 9.985 0 0 1 9.985-9.985v19.883a14.989 14.989 0 0 0 14.989 14.988z" transform="translate(485.082 978.343)" style="fill-rule:evenodd;fill:#072a30"/>
+            <path data-name="Path 2416" d="M53.8 2H18.845a9.985 9.985 0 0 0-9.985 9.985v25.5a10.007 10.007 0 0 0 9.985 9.985h21.39l9.614 8.237a2.513 2.513 0 0 0 4.13-1.9v-6.339a9.81 9.81 0 0 0 9.81-9.81V11.985A9.985 9.985 0 0 0 53.8 2zM28.83 26.974h-5v-5h5zm9.985 0h-4.981v-5h5zm9.985 0h-4.981v-5h5z" transform="translate(493.211 969.883)" style="fill:#43d685;fill-rule:evenodd"/>
+        </g>
+    </g>
+</svg>

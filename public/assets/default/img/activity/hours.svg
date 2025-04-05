@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_238" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 238" transform="translate(852 176)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}.cls-5{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_31" clip-path="url(#clip-path)" data-name="Mask Group 31" transform="translate(-852 -176)">
+        <g id="meter" transform="translate(852 176)">
+            <g id="Group_498" data-name="Group 498">
+                <path id="Path_401" d="M32 36h17.333v9.333H14.667V36H32z" class="cls-3" data-name="Path 401"/>
+                <path id="Path_402" d="M32 36H10.667v-4a21.333 21.333 0 1 1 42.667 0v4z" class="cls-3" data-name="Path 402"/>
+            </g>
+            <path id="Path_403" fill="#bdd3dd" d="M32 1.333A30.667 30.667 0 1 1 1.333 32 30.667 30.667 0 0 1 32 1.333zM53.333 36v-4a21.333 21.333 0 1 0-42.667 0v4h4v9.333h34.667V36z" data-name="Path 403"/>
+            <g id="Group_499" data-name="Group 499">
+                <path id="Path_404" d="M32 0a32 32 0 1 0 32 32A32 32 0 0 0 32 0zm0 61.333A29.333 29.333 0 1 1 61.333 32 29.333 29.333 0 0 1 32 61.333z" class="cls-5" data-name="Path 404"/>
+                <path id="Path_405" d="M32 9.333A22.692 22.692 0 0 0 9.333 32v4a1.333 1.333 0 0 0 1.333 1.333h16v-2.666H12V32a20 20 0 0 1 40 0v2.667H37.333v2.667h16A1.333 1.333 0 0 0 54.667 36v-4A22.692 22.692 0 0 0 32 9.333z" class="cls-5" data-name="Path 405"/>
+                <path id="Path_406" d="M48 44H16v-4h-2.667v5.333a1.333 1.333 0 0 0 1.333 1.333h34.667a1.333 1.333 0 0 0 1.333-1.333V40H48z" class="cls-5" data-name="Path 406"/>
+                <path id="Path_407" d="M16 49.333h2.667V52H16z" class="cls-5" data-name="Path 407"/>
+                <path id="Path_408" d="M21.333 49.333H24V52h-2.667v-2.667z" class="cls-5" data-name="Path 408"/>
+                <path id="Path_409" d="M29.333 49.333H48V52H29.333z" class="cls-5" data-name="Path 409"/>
+                <path id="Path_410" d="M33.333 37.333V28a1.334 1.334 0 0 0-.391-.943l-8-8-1.885 1.885 7.609 7.609v8.781z" class="cls-5" data-name="Path 410"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,83 @@
+.footer {
+    margin-top: 205px;
+
+    .footer-subscribe {
+        position: relative;
+        top: -100px;
+        height: 200px;
+        background-image: url("/assets/default/img/footer/pattern.png");
+        background-color: var(--primary);
+        border-radius: 15px;
+        padding: 25px;
+
+        @media (max-width: $screen-xs-max) {
+            height: auto;
+        }
+
+        strong {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.22;
+            color: #ffffff;
+            pointer-events: none;
+        }
+
+        .subscribe-input {
+            border-radius: 38px;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+        }
+
+    }
+
+    ul {
+        li {
+            font-size: 14px;
+
+            a {
+                color: #ffffff !important;
+            }
+
+            &.header {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer-social {
+        img {
+            width: 24px;
+            min-width: 24px;
+            max-width: 24px;
+            height: 24px;
+        }
+    }
+
+    .footer-logo {
+        width: 170px;
+        height: 50px;
+    }
+
+    .border-blue {
+        border-top: 1px solid #305995;
+    }
+
+    .footer-copyright-card {
+        position: relative;
+        background-color: transparent;
+
+        .container {
+            position: relative;
+            z-index: 2;
+            background-color: transparent;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.15;
+            background-color: #000;
+            z-index: 1;
+        }
+    }
+}

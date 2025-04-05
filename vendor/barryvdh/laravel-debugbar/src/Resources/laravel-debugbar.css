@@ -1,0 +1,921 @@
+/* Force Laravel Whoops exception handler to be displayed under the debug bar */
+.Whoops.container {
+    z-index: 5999999;
+}
+div.phpdebugbar,
+div.phpdebugbar-openhandler {
+    --color-red-vivid: #eb4432;
+}
+
+div.phpdebugbar {
+    font-size: 13px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    direction: ltr;
+    text-align: left;
+    z-index: 6000000;
+}
+
+div.phpdebugbar * {
+    direction: ltr;
+
+    text-align: left;
+}
+
+div.phpdebugbar-openhandler-overlay {
+    z-index: 6000001;
+    cursor: pointer;
+}
+
+div.phpdebugbar-openhandler {
+    border: 1px solid #aaa;
+    border-top: 3px solid var(--color-red-vivid);
+    width: 80%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    z-index: 6000002;
+    cursor: default;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > a,
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions button {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    padding: 0px 12px 2px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    color: #000;
+    text-shadow: 1px 1px #fff;
+    font-size: 13px;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form {
+    margin: 15px 0px 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form br {
+    display: none;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form > b {
+    display: none;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form input,
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form select {
+    margin: 0px 10px 10px 2px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 3px 6px 2px;
+    line-height: 16px;
+}
+
+@media (max-width: 720px) {
+    div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form select + br,
+    div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form input[name="uri"] + br {
+        display: block;
+    }
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions > form select {
+    padding: 2px 5px 1px;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions input[name="uri"] {
+    width: 200px;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions input[name="ip"] {
+    width: 90px;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-actions button {
+    outline: none;
+    margin: 0px 0px 10px 2px;
+    padding: 5px 15px 4px;
+    line-height: 12px;
+}
+
+div.phpdebugbar-openhandler table {
+    margin: 15px 0px 10px;
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+div.phpdebugbar-openhandler table td,
+div.phpdebugbar-openhandler table th {
+    width: auto!important;
+    text-align: left;
+    border: 0px solid #bbb;
+    padding: 2px 8px;
+    font-size: 14px;
+}
+
+div.phpdebugbar-openhandler table th {
+    text-shadow: 1px 1px #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 8px;
+}
+
+div.phpdebugbar-openhandler table th,
+div.phpdebugbar-openhandler table tr:nth-child(2n) {
+    background-color: #efefef;
+}
+
+div.phpdebugbar-openhandler table th:nth-child(1), div.phpdebugbar-openhandler table td:nth-child(1), /* Date */
+div.phpdebugbar-openhandler table th:nth-child(2), div.phpdebugbar-openhandler table td:nth-child(2), /* Method */
+div.phpdebugbar-openhandler table th:nth-child(4), div.phpdebugbar-openhandler table td:nth-child(4), /* IP */
+div.phpdebugbar-openhandler table th:nth-child(5), div.phpdebugbar-openhandler table td:nth-child(5) { /* Filter */
+    width: 5%!important;
+    white-space: nowrap;
+}
+
+div.phpdebugbar-openhandler table th:nth-child(2), div.phpdebugbar-openhandler table td:nth-child(2), /* Method */
+div.phpdebugbar-openhandler table th:nth-child(4), div.phpdebugbar-openhandler table td:nth-child(4), /* IP */
+div.phpdebugbar-openhandler table th:nth-child(5), div.phpdebugbar-openhandler table td:nth-child(5) { /* Filter */
+    text-align: center;
+}
+
+div.phpdebugbar-openhandler table th:nth-child(3) { /* URL */
+    width: calc(100vw - 100% - 196px)!important;
+}
+
+div.phpdebugbar-openhandler table td a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+div.phpdebugbar-resize-handle {
+    display: block!important;
+    height: 3px;
+    margin-top: -3px;
+    width: 100%;
+    background: none;
+    cursor: ns-resize;
+    border-top: none;
+    border-bottom: 0px;
+    background-color: var(--color-red-vivid);
+}
+
+.phpdebugbar.phpdebugbar-minimized div.phpdebugbar-resize-handle {
+    cursor: default!important;
+}
+
+div.phpdebugbar-closed,
+div.phpdebugbar-minimized {
+    border-top-color: #ddd;
+}
+
+div.phpdebugbar code, div.phpdebugbar pre, div.phpdebugbar samp {
+    background: none !important;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1em;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div.phpdebugbar .hljs {
+    padding: 0;
+}
+
+div.phpdebugbar .phpdebugbar-widgets-messages .hljs > code {
+    padding-bottom: 3px;
+}
+
+div.phpdebugbar code, div.phpdebugbar pre {
+    color: #000;
+}
+
+div.phpdebugbar-widgets-exceptions .phpdebugbar-widgets-filename {
+    margin-top: 4px;
+}
+
+div.phpdebugbar-widgets-exceptions li.phpdebugbar-widgets-list-item pre.phpdebugbar-widgets-file {
+    border: 1px solid #d2d2d2;
+    border-left: 2px solid #d2d2d2;
+}
+
+div.phpdebugbar-widgets-exceptions li.phpdebugbar-widgets-list-item pre.phpdebugbar-widgets-file[style="display: block;"] ~ div {
+    display: block;
+}
+
+div.phpdebugbar pre.sf-dump {
+    color: #000;
+    outline: none;
+    padding-left: 0px;
+}
+
+div.phpdebugbar-body {
+    border-top: 1px solid #ddd;
+}
+
+div.phpdebugbar-header {
+    min-height: 30px;
+    line-height: 20px;
+    text-shadow: 1px 1px #FFF;
+}
+
+div.phpdebugbar-header  span.phpdebugbar-text, div.phpdebugbar-header > div > span > span {
+    transform: translateY(-1px) !important;
+}
+
+a.phpdebugbar-restore-btn {
+    background: url(data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M47.973%2010.859a.74.74%200%200%201%20.027.196v10.303a.735.735%200%200%201-.104.377.763.763%200%200%201-.285.275l-8.902%204.979v9.868a.75.75%200%200%201-.387.652L19.74%2047.9c-.043.023-.09.038-.135.054-.018.006-.034.016-.053.021a.801.801%200%200%201-.396%200c-.021-.006-.04-.017-.061-.024-.043-.015-.087-.029-.128-.051L.39%2037.509a.763.763%200%200%201-.285-.276.736.736%200%200%201-.104-.376V5.947c0-.067.01-.133.027-.196.006-.022.02-.042.027-.063.015-.04.028-.08.05-.117.014-.024.035-.044.053-.067.022-.03.042-.06.068-.087.022-.021.051-.037.077-.056.028-.023.053-.047.085-.065L9.677.1a.793.793%200%200%201%20.774%200l9.29%205.196h.002c.03.019.057.042.085.064.025.019.053.036.075.056.027.027.047.058.07.088.016.023.038.043.052.067.022.038.035.077.05.117.008.021.021.04.027.063a.74.74%200%200%201%20.027.197v19.305l7.742-4.33v-9.869c0-.066.01-.132.027-.195.006-.023.019-.042.027-.064.015-.04.029-.08.05-.116.014-.025.036-.045.052-.067.023-.03.043-.061.07-.087.022-.022.05-.038.075-.057.03-.022.054-.047.085-.065l9.292-5.195a.792.792%200%200%201%20.773%200l9.29%205.195c.033.02.058.043.087.064.025.02.053.036.075.057.027.027.046.058.07.088.017.022.038.042.052.067.022.036.034.077.05.116.009.022.021.041.027.064ZM46.45%2020.923v-8.567l-3.25%201.818-4.492%202.512v8.567l7.743-4.33Zm-9.29%2015.5v-8.574l-4.417%202.45-12.616%206.995v8.654l17.033-9.526ZM1.55%207.247v29.174l17.03%209.525v-8.653l-8.897-4.89-.003-.003-.003-.002c-.03-.017-.056-.041-.084-.062-.024-.018-.052-.033-.073-.054l-.002-.003c-.025-.023-.042-.053-.064-.079-.02-.025-.042-.047-.058-.073v-.003c-.018-.028-.029-.062-.041-.094-.013-.028-.03-.054-.037-.084-.01-.036-.012-.075-.016-.111-.003-.028-.011-.056-.011-.085V11.58L4.8%209.064%201.549%207.248Zm8.516-5.628-7.74%204.328%207.738%204.328%207.74-4.33-7.74-4.326h.002Zm4.026%2027.01%204.49-2.51V7.247L15.33%209.066l-4.492%202.512V30.45l3.253-1.819ZM37.935%206.727l-7.74%204.328%207.74%204.328%207.738-4.329-7.738-4.327Zm-.775%209.959-4.49-2.512-3.252-1.818v8.567l4.49%202.511%203.252%201.82v-8.568ZM19.353%2035.993l11.352-6.295%205.674-3.146-7.733-4.325-8.904%204.98-8.116%204.538%207.727%204.248Z%22%20fill%3D%22%23FF2D20%22/%3E%3C/svg%3E) no-repeat 11px center / 20px 20px !important;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-header {
+    background: url(data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M47.973%2010.859a.74.74%200%200%201%20.027.196v10.303a.735.735%200%200%201-.104.377.763.763%200%200%201-.285.275l-8.902%204.979v9.868a.75.75%200%200%201-.387.652L19.74%2047.9c-.043.023-.09.038-.135.054-.018.006-.034.016-.053.021a.801.801%200%200%201-.396%200c-.021-.006-.04-.017-.061-.024-.043-.015-.087-.029-.128-.051L.39%2037.509a.763.763%200%200%201-.285-.276.736.736%200%200%201-.104-.376V5.947c0-.067.01-.133.027-.196.006-.022.02-.042.027-.063.015-.04.028-.08.05-.117.014-.024.035-.044.053-.067.022-.03.042-.06.068-.087.022-.021.051-.037.077-.056.028-.023.053-.047.085-.065L9.677.1a.793.793%200%200%201%20.774%200l9.29%205.196h.002c.03.019.057.042.085.064.025.019.053.036.075.056.027.027.047.058.07.088.016.023.038.043.052.067.022.038.035.077.05.117.008.021.021.04.027.063a.74.74%200%200%201%20.027.197v19.305l7.742-4.33v-9.869c0-.066.01-.132.027-.195.006-.023.019-.042.027-.064.015-.04.029-.08.05-.116.014-.025.036-.045.052-.067.023-.03.043-.061.07-.087.022-.022.05-.038.075-.057.03-.022.054-.047.085-.065l9.292-5.195a.792.792%200%200%201%20.773%200l9.29%205.195c.033.02.058.043.087.064.025.02.053.036.075.057.027.027.046.058.07.088.017.022.038.042.052.067.022.036.034.077.05.116.009.022.021.041.027.064ZM46.45%2020.923v-8.567l-3.25%201.818-4.492%202.512v8.567l7.743-4.33Zm-9.29%2015.5v-8.574l-4.417%202.45-12.616%206.995v8.654l17.033-9.526ZM1.55%207.247v29.174l17.03%209.525v-8.653l-8.897-4.89-.003-.003-.003-.002c-.03-.017-.056-.041-.084-.062-.024-.018-.052-.033-.073-.054l-.002-.003c-.025-.023-.042-.053-.064-.079-.02-.025-.042-.047-.058-.073v-.003c-.018-.028-.029-.062-.041-.094-.013-.028-.03-.054-.037-.084-.01-.036-.012-.075-.016-.111-.003-.028-.011-.056-.011-.085V11.58L4.8%209.064%201.549%207.248Zm8.516-5.628-7.74%204.328%207.738%204.328%207.74-4.33-7.74-4.326h.002Zm4.026%2027.01%204.49-2.51V7.247L15.33%209.066l-4.492%202.512V30.45l3.253-1.819ZM37.935%206.727l-7.74%204.328%207.74%204.328%207.738-4.329-7.738-4.327Zm-.775%209.959-4.49-2.512-3.252-1.818v8.567l4.49%202.511%203.252%201.82v-8.568ZM19.353%2035.993l11.352-6.295%205.674-3.146-7.733-4.325-8.904%204.98-8.116%204.538%207.727%204.248Z%22%20fill%3D%22%23FF2D20%22/%3E%3C/svg%3E) no-repeat 11px center / 20px 20px !important;
+    padding: 4px 4px 6px 38px;
+    margin: 0px !important;
+}
+
+div.phpdebugbar-openhandler .phpdebugbar-openhandler-header a {
+    display: flex;
+    cursor: pointer;
+}
+
+div.phpdebugbar-header,
+div.phpdebugbar-openhandler-header {
+    background-size: 21px auto;
+    background-position: 9px center;
+}
+
+a.phpdebugbar-restore-btn {
+    border-right-color: #ddd!important;
+    height: 20px;
+    width: 24px;
+    background-position: center;
+    background-size: 21px;
+    background-color: white;
+}
+
+.phpdebugbar:not(.phpdebugbar-closed) a.phpdebugbar-restore-btn {
+    border-right: none;
+}
+
+div.phpdebugbar-header > div > * {
+    font-size: 13px;
+    padding: 5px;
+}
+
+div.phpdebugbar-header .phpdebugbar-tab {
+    padding: 5px 8px;
+    border-left: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+a.phpdebugbar-tab.phpdebugbar-tab-history {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.phpdebugbar-header .phpdebugbar-header-left {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.phpdebugbar .phpdebugbar-header select {
+    margin: 0;
+    padding: 2px 3px 3px 3px;
+    border-radius: 3px;
+    width: auto;
+    cursor: pointer;
+}
+
+dl.phpdebugbar-widgets-kvlist dt,
+dl.phpdebugbar-widgets-kvlist dd {
+    min-height: 20px;
+    line-height: 20px;
+    padding: 4px 5px 5px;
+    border-top: 0px;
+}
+
+dl.phpdebugbar-widgets-kvlist dd.phpdebugbar-widgets-value.phpdebugbar-widgets-pretty .phpdebugbar-widgets-code-block {
+    padding: 0px 0px;
+    background: transparent;
+}
+
+dl.phpdebugbar-widgets-kvlist dt {
+    width: 25%;
+}
+
+dl.phpdebugbar-widgets-kvlist dd {
+    margin-left: 25%;
+}
+
+ul.phpdebugbar-widgets-timeline li .phpdebugbar-widgets-measure {
+    margin: 0 6px !important;
+    height: 28px;
+    line-height: 28px;
+    border: none;
+}
+
+ul.phpdebugbar-widgets-timeline li > .phpdebugbar-widgets-measure {
+    height: 20px;
+}
+
+ul.phpdebugbar-widgets-timeline li span.phpdebugbar-widgets-value {
+    height: 16px;
+    background-color: #63abca;
+    border-bottom: 2px solid #477e96;
+}
+
+ul.phpdebugbar-widgets-timeline li span.phpdebugbar-widgets-label,
+ul.phpdebugbar-widgets-timeline li span.phpdebugbar-widgets-collector {
+    top: 0px;
+    color: #000;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+ul.phpdebugbar-widgets-timeline li .phpdebugbar-widgets-value span.phpdebugbar-widgets-label {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+ul.phpdebugbar-widgets-timeline table.phpdebugbar-widgets-params {
+    font-size: 11px;
+    margin-top: 20px !important;
+}
+
+ul.phpdebugbar-widgets-timeline table.phpdebugbar-widgets-params td {
+    border-left: none ;
+    border-right: none;
+}
+
+ul.phpdebugbar-widgets-timeline table.phpdebugbar-widgets-params td:first-child {
+    padding: 0 10px;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    padding: 4px 0px 4px;
+    height: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 0px;
+    background-color: #e8e8e8;
+    border-radius: 5px 5px 0px 0px;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter, div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded {
+    right: 3px;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar input {
+    width: calc(100% - 48px);
+    margin-left: 0px;
+    border-radius: 3px;
+    padding: 2px 6px;
+    height: 15px;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-label,
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-collector {
+    padding: 1px 0px 0px 10px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #333;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-collector {
+    text-transform: none;
+    color: #888;
+}
+
+.phpdebugbar-widgets-toolbar i.phpdebugbar-fa.phpdebugbar-fa-search {
+    position: relative;
+    top: -1px;
+    padding: 0px 10px;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter,
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded {
+    position: relative;
+    top: -48px;
+    display: inline-block;
+    background-color: #6d6d6d;
+    margin-left: 3px;
+    border-radius: 3px;
+    padding: 5px 8px 4px;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-shadow: 1px 1px #585858;
+    transition: background-color .25s linear 0s, color .25s linear 0s;
+    color: #FFF;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="alert"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="alert"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="info"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="info"] {
+    background-color: #5896e2;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="debug"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="debug"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="success"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="success"] {
+    background-color: #45ab45;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="critical"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="critical"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="error"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="error"] {
+    background-color: var(--color-red-vivid);
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="notice"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="notice"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter[rel="warning"],
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded[rel="warning"] {
+    background-color: #f99400;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter:hover {
+    color: #FFF;
+    opacity: 0.85;
+}
+
+div.phpdebugbar-widgets-messages div.phpdebugbar-widgets-toolbar a.phpdebugbar-widgets-filter.phpdebugbar-widgets-excluded {
+    opacity: 0.45;
+}
+
+a.phpdebugbar-tab:hover,
+span.phpdebugbar-indicator:hover,
+a.phpdebugbar-indicator:hover,
+a.phpdebugbar-close-btn:hover,
+a.phpdebugbar-restore-btn:hover,
+a.phpdebugbar-minimize-btn:hover,
+a.phpdebugbar-maximize-btn:hover,
+a.phpdebugbar-open-btn:hover {
+    background-color: #ebebeb;
+    /* transition: background-color .25s linear 0s, color .25s linear 0s; */
+}
+
+a.phpdebugbar-minimize-btn,
+a.phpdebugbar-maximize-btn {
+    width: 28px!important;
+}
+
+a.phpdebugbar-tab.phpdebugbar-active {
+    background: var(--color-red-vivid);
+    background-image: none;
+    color: #fff !important;
+    text-shadow: 1px 1px #bf3039;
+}
+
+a.phpdebugbar-tab.phpdebugbar-active span.phpdebugbar-badge {
+    background-color: white;
+    color: var(--color-red-vivid);
+    text-shadow: 1px 1px #ebebeb;
+}
+
+a.phpdebugbar-tab span.phpdebugbar-badge {
+    vertical-align: 0px;
+    padding: 2px 8px;
+    text-align: center;
+    background: var(--color-red-vivid);
+    font-size: 11px;
+    font-family: monospace;
+    color: #fff;
+    text-shadow: 1px 1px #bf3039;
+    border-radius: 10px;
+    position: relative;
+}
+
+.phpdebugbar-indicator {
+    cursor: text;
+}
+
+.phpdebugbar-indicator span.phpdebugbar-tooltip,
+div.phpdebugbar-mini-design a.phpdebugbar-tab:hover span.phpdebugbar-text {
+    border: none;
+    border-radius: 5px;
+    background: #f5f5f5;
+    font-size: 12px;
+    width: auto;
+    white-space: nowrap;
+    padding: 2px 18px;
+    text-shadow: none;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.phpdebugbar-mini-design a.phpdebugbar-tab:hover span.phpdebugbar-text {
+    left: 0px;
+    right: auto;
+}
+
+.phpdebugbar-widgets-toolbar > .fa {
+    width: 25px;
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item {
+    padding: 7px 10px;
+    border: none;
+    font-family: inherit;
+    overflow: visible;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-sql {
+    line-height: 20px;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item:hover,
+ul.phpdebugbar-widgets-timeline li:hover {
+    background-color: initial;
+}
+
+.phpdebugbar-widgets-sqlqueries ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phpdebugbar-widgets-templates ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item {
+    display: block;
+}
+
+.phpdebugbar-widgets-templates ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item,
+.phpdebugbar-widgets-mails ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item {
+    line-height: 15px;
+}
+
+.phpdebugbar-widgets-mails ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item {
+    cursor: pointer;
+    display: block;
+}
+
+.phpdebugbar-widgets-mails ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-subject {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.phpdebugbar-widgets-mails ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-headers {
+    margin: 10px 0px;
+    padding: 7px 10px;
+    border-left: 2px solid #ddd;
+    line-height: 17px;
+}
+
+.phpdebugbar-widgets-sql.phpdebugbar-widgets-name {
+    font-weight: bold;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-sql {
+    flex: 1;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-duration,
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-stmt-id,
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-memory {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-database {
+    margin-left: auto;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-stmt-id a {
+    color: #888;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item .phpdebugbar-widgets-stmt-id a:hover {
+    color: #aaa;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item table.phpdebugbar-widgets-params {
+    background-color: #fdfdfd;
+    margin: 10px 0px;
+    font-size: 12px;
+    border-left: 2px solid #cecece;
+}
+
+div.phpdebugbar-widgets-templates table.phpdebugbar-widgets-params th,
+div.phpdebugbar-widgets-templates table.phpdebugbar-widgets-params td {
+    padding: 1px 10px!important;
+}
+
+div.phpdebugbar-widgets-templates table.phpdebugbar-widgets-params th {
+    padding: 2px 10px!important;
+    background-color: #efefef;
+}
+
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params td.phpdebugbar-widgets-name {
+    width: auto;
+}
+
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params td.phpdebugbar-widgets-name .phpdebugbar-fa {
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value {
+    display: inline-flex;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value:before {
+    font-family: PhpDebugbarFontAwesome;
+    content: "\f005";
+    color: #333;
+    font-size: 15px !important;
+    margin-right: 8px;
+    float: left;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-info {
+    color: #1299DA;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-info:before {
+    content: "\f05a";
+    color: #5896e2;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-success:before {
+    content: "\f058";
+    color: #45ab45;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-error {
+    color: #e74c3c;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-error:before {
+    color: var(--color-red-vivid);
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-warning:before,
+div.phpdebugbar-widgets-messages .phpdebugbar-widgets-value.phpdebugbar-widgets-warning {
+    color: #FF9800;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-value.phpdebugbar-widgets-deprecation:before {
+    content: "\f1f6";
+    color: #FF9800;
+}
+
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item pre.sf-dump {
+    display: inline-block !important;
+    position: relative;
+    top: -1px;
+}
+
+div.phpdebugbar-panel div.phpdebugbar-widgets-status {
+    padding: 9px 10px !important;
+    width: calc(100% - 20px);
+    margin-top: 0px !important;
+    line-height: 11px!important;
+    font-weight: bold!important;
+    background: #f5f5f5!important;
+    border-bottom: 1px solid #cecece!important;
+}
+
+div.phpdebugbar-panel div.phpdebugbar-widgets-status > * {
+    color: #383838!important;
+}
+
+div.phpdebugbar-panel div.phpdebugbar-widgets-status > span:first-child:before {
+    font-family: PhpDebugbarFontAwesome;
+    content: "\f05a";
+    color: #737373;
+    text-shadow: 1px 1px #fff;
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+}
+
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params th,
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params td {
+    padding: 4px 10px;
+}
+
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params th {
+    background-color: #efefef;
+}
+
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params td.phpdebugbar-widgets-name {
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+div.phpdebugbar-widgets-sqlqueries table.phpdebugbar-widgets-params td.phpdebugbar-widgets-value {
+    text-align: left;
+}
+
+div.phpdebugbar-widgets-templates .phpdebugbar-widgets-list-item table.phpdebugbar-widgets-params {
+    width: auto!important;
+}
+
+ul.phpdebugbar-widgets-list ul.phpdebugbar-widgets-table-list {
+    text-align: left;
+    line-height: 150%;
+}
+
+.phpdebugbar-text-muted {
+    color: #888;
+}
+
+ul.phpdebugbar-widgets-cache a.phpdebugbar-widgets-forget {
+    float: right;
+    font-size: 12px;
+    padding: 0 4px;
+    background: var(--color-red-vivid);
+    margin: 0 2px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+a.phpdebugbar-tab i {
+    line-height: 20px;
+}
+
+div.phpdebugbar-mini-design a.phpdebugbar-tab {
+    border-right: none;
+}
+
+div.phpdebugbar-header-right {
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.phpdebugbar-header-right > a {
+    height: 20px;
+    background-position: center;
+}
+
+div.phpdebugbar-header-right .phpdebugbar-indicator > i.phpdebugbar-fa {
+    vertical-align: baseline;
+    margin-top: 2px;
+}
+
+div.phpdebugbar-panel[data-collector="__datasets"] {
+    padding: 0 10px;
+}
+
+div.phpdebugbar-panel table {
+    margin: 10px 0px!important;
+    width: 100%!important;
+}
+
+div.phpdebugbar-panel table .phpdebugbar-widgets-name {
+    font-size: 13px;
+}
+
+dl.phpdebugbar-widgets-kvlist > :nth-child(4n-1),
+dl.phpdebugbar-widgets-kvlist > :nth-child(4n) {
+    background-color: #f5f5f5;
+}
+
+.phpdebugbar pre.sf-dump:after {
+    clear: none!important;
+}
+
+div.phpdebugbar-widgets-exceptions li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-message {
+    color: #dd1044;
+}
+
+div.phpdebugbar-widgets-exceptions li.phpdebugbar-widgets-list-item > div {
+    display: none;
+}
+
+
+div.phpdebugbar-widgets-sqlqueries span.phpdebugbar-widgets-database:before,
+div.phpdebugbar-widgets-sqlqueries span.phpdebugbar-widgets-duration:before,
+div.phpdebugbar-widgets-sqlqueries span.phpdebugbar-widgets-memory:before,
+div.phpdebugbar-widgets-sqlqueries span.phpdebugbar-widgets-row-count:before,
+div.phpdebugbar-widgets-sqlqueries span.phpdebugbar-widgets-copy-clipboard:before,
+div.phpdebugbar-widgets-sqlqueries span.phpdebugbar-widgets-stmt-id:before,
+div.phpdebugbar-widgets-templates span.phpdebugbar-widgets-param-count:before {
+    margin-right: 6px!important;
+}
+
+.phpdebugbar-widgets-list-item .phpdebugbar-widgets-bg-measure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.phpdebugbar-widgets-bg-measure .phpdebugbar-widgets-value {
+    position: absolute;
+    height: 1px !important;
+    opacity: 1 !important;
+    bottom: 0;
+    background: #63abca !important;
+}
+
+div.phpdebugbar dl.phpdebugbar-widgets-kvlist > :nth-child(4n)::before {
+background-color: #f5f5f5;
+}
+
+dt.phpdebugbar-widgets-key {
+    padding-left: 10px !important;
+}
+
+dt.phpdebugbar-widgets-key {
+    position: relative;
+    background: white;
+    z-index: 1;
+}
+
+dd.phpdebugbar-widgets-value {
+    position: relative;
+}
+
+dd.phpdebugbar-widgets-value::before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 33.33%;
+    margin-left: -33.33%;
+}
+
+dd.phpdebugbar-widgets-value  pre.sf-dump {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ul.phpdebugbar-widgets-table-list {
+    padding: 4px 0;
+}
+
+ul.phpdebugbar-widgets-table-list li {
+    margin-bottom: 4px;
+}
+
+ul.phpdebugbar-widgets-table-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+pre.phpdebugbar-widgets-code-block ul.phpdebugbar-widgets-numbered-code li {
+    line-height: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    div.phpdebugbar .phpdebugbar-indicator span.phpdebugbar-tooltip,
+    div.phpdebugbar div.phpdebugbar-mini-design a.phpdebugbar-tab:hover span.phpdebugbar-text,
+    div.phpdebugbar pre.sf-dump,
+    div.phpdebugbar .hljs,
+    div.phpdebugbar code.phpdebugbar-widgets-sql span.hljs-operator {
+        color: var(--color-gray-100) !important;
+    }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_239" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 239" transform="translate(1255 176)"/>
+        </clipPath>
+        <style>
+            .cls-4{fill:#fff}.cls-3{fill:#bdd3dd}.cls-5{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_32" clip-path="url(#clip-path)" data-name="Mask Group 32" transform="translate(-1255 -176)">
+        <g id="investment_1_" data-name="investment (1)" transform="translate(1255 176)">
+            <path id="Path_411" d="M54.667 50.667v4H40l-1.333 2.667H25.333L24 54.667H9.333V20h45.334v30.667z" class="cls-3" data-name="Path 411"/>
+            <path id="Path_412" d="M60 50.667v4h-5.333V20H9.333v34.667H4V17.333a2.675 2.675 0 0 1 2.667-2.667h50.666A2.675 2.675 0 0 1 60 17.333v33.334z" class="cls-4" data-name="Path 412"/>
+            <g id="Group_500" data-name="Group 500">
+                <path id="Path_413" d="M62.667 54.667v6.667a1.333 1.333 0 0 1-1.333 1.333H2.667a1.333 1.333 0 0 1-1.333-1.333v-6.667H24l1.333 2.667h13.334L40 54.667z" class="cls-3" data-name="Path 413"/>
+                <path id="Path_414" d="M32 4a2.675 2.675 0 0 1 2.667-2.667h10.666A2.675 2.675 0 0 1 48 4v8H16V4a2.675 2.675 0 0 1 2.667-2.667h10.666A2.675 2.675 0 0 1 32 4z" class="cls-3" data-name="Path 414"/>
+            </g>
+            <circle id="Ellipse_68" cx="13.333" cy="13.333" r="13.333" class="cls-4" data-name="Ellipse 68" transform="translate(18.667 16)"/>
+            <g id="Group_501" data-name="Group 501">
+                <path id="Path_415" d="M62.667 53.333H40a1.333 1.333 0 0 0-1.193.737L37.843 56H26.157l-.957-1.929a1.333 1.333 0 0 0-1.2-.737H1.333A1.333 1.333 0 0 0 0 54.667v6.667A2.667 2.667 0 0 0 2.667 64h58.666A2.667 2.667 0 0 0 64 61.333v-6.666a1.333 1.333 0 0 0-1.333-1.334zm-1.333 8H2.667V56h20.509l.964 1.929a1.333 1.333 0 0 0 1.193.737h13.334a1.333 1.333 0 0 0 1.193-.737L40.824 56h20.509z" class="cls-5" data-name="Path 415"/>
+                <path id="Path_416" d="M5.333 17.333A1.333 1.333 0 0 1 6.667 16h4v-2.667h-4a4 4 0 0 0-4 4v33.334h2.666z" class="cls-5" data-name="Path 416"/>
+                <path id="Path_417" d="M58.667 17.333v33.334h2.667V17.333a4 4 0 0 0-4-4h-4V16h4a1.333 1.333 0 0 1 1.333 1.333z" class="cls-5" data-name="Path 417"/>
+                <path id="Path_418" d="M56 50.667V20a1.333 1.333 0 0 0-1.333-1.333h-5.334v2.667h4v29.333z" class="cls-5" data-name="Path 418"/>
+                <path id="Path_419" d="M8 20v30.667h2.667V21.333h4v-2.666H9.333A1.333 1.333 0 0 0 8 20z" class="cls-5" data-name="Path 419"/>
+                <path id="Path_420" d="M5.333 57.333H8V60H5.333z" class="cls-5" data-name="Path 420"/>
+                <path id="Path_421" d="M56 57.333h2.667V60H56z" class="cls-5" data-name="Path 421"/>
+                <path id="Path_422" d="M16 13.333h12v-2.666H17.333V4a1.333 1.333 0 0 1 1.333-1.333h10.667A1.333 1.333 0 0 1 30.667 4v1.333h-9.334V8h9.333v6.735a14.667 14.667 0 1 0 2.667 0V8h9.333V5.333h-9.333V4a1.333 1.333 0 0 1 1.333-1.333h10.667A1.333 1.333 0 0 1 46.667 4v6.667H36v2.667h12A1.333 1.333 0 0 0 49.333 12V4a4 4 0 0 0-4-4H34.667A3.983 3.983 0 0 0 32 1.021 3.983 3.983 0 0 0 29.333 0H18.667a4 4 0 0 0-4 4v8A1.333 1.333 0 0 0 16 13.333zm28 16a12 12 0 1 1-12-12 12 12 0 0 1 12 12z" class="cls-5" data-name="Path 422"/>
+                <path id="Path_423" d="M30.667 20v2.667h-1.334a2.667 2.667 0 0 0-2.667 2.667V28a2.667 2.667 0 0 0 2.667 2.667h5.333v2.667h-5.333V32h-2.666v1.333A2.667 2.667 0 0 0 29.333 36h1.333v2.667h2.667V36h1.333a2.667 2.667 0 0 0 2.667-2.667v-2.666A2.667 2.667 0 0 0 34.667 28h-5.334v-2.667h5.333v1.333h2.667v-1.333a2.667 2.667 0 0 0-2.667-2.667h-1.333V20z" class="cls-5" data-name="Path 423"/>
+                <path id="Path_424" d="M13.333 45.333v4a1.333 1.333 0 0 0 1.333 1.333h4V48H16v-2.667z" class="cls-5" data-name="Path 424"/>
+            </g>
+        </g>
+    </g>
+</svg>

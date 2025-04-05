@@ -1,0 +1,12 @@
+
+h2,.h2 {
+    @media (max-width: $screen-xs-max) {
+        font-size: 1.1rem;
+    }
+}
+
+h3,.h3 {
+    @media (max-width: $screen-xs-max) {
+        font-size: .9rem;
+    }
+}

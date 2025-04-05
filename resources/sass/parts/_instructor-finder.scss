@@ -1,0 +1,276 @@
+
+.instructor-finder-wizard {
+    height: calc(100vh - 119px);
+    overflow: hidden;
+
+    @media (max-width: $screen-xs-max) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .wizard-left-side {
+        height: calc(100vh - 119px);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: initial;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+            z-index: 1;
+        }
+
+        .wizard-left-side-content {
+            z-index: 2;
+            padding: 50px 80px;
+
+            .wizard-stat-icon {
+                width: 64px;
+                height: 64px;
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+    }
+
+    .wizard-content {
+        height: calc(100vh - 119px);
+        overflow-y: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .wizard-step-num {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 96px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+    }
+}
+
+.full-checkbox {
+    padding-right: 2rem !important;
+    padding-left: 0 !important;
+
+    .custom-control-label {
+        &:after, &:before {
+            left: auto !important;
+            right: -2rem;
+        }
+    }
+}
+
+.wizard-custom-radio {
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        border: 1px solid $gray-300;
+        color: $gray;
+    }
+
+    input {
+        display: none;
+
+        &:checked {
+            & ~ label {
+                background-color: var(--primary);
+                border-color: var(--primary);
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .wizard-custom-radio-item {
+        &:first-child label {
+            border-right: 0;
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+
+        &:last-child label {
+            border-left: 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        .rtl & {
+            &:first-child label {
+                border-left: 0;
+                border-radius: 0 0.5rem 0.5rem 0;
+            }
+
+            &:last-child label {
+                border-right: 0;
+                border-radius: 0.5rem 0 0 0.5rem;
+            }
+        }
+    }
+}
+
+.wizard-custom-checkbox {
+    margin-right: 10px;
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        border: 1px solid $gray-300;
+        color: $gray;
+        border-radius: 10px;
+    }
+
+    input {
+        display: none;
+
+        &:checked {
+            & ~ label {
+                background-color: var(--primary);
+                border-color: var(--primary);
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+.wrunner__valueNote_theme_default.wrunner__valueNote {
+    background-color: $gray-200 !important;
+    color: $gray !important;
+    border-radius: 50px !important;
+    font-family: inherit !important;
+
+    &:after {
+        border-top-color: $gray-200 !important;
+    }
+}
+
+.wrunner__pathPassed_theme_default.wrunner__pathPassed {
+    background-color: var(--primary) !important;
+}
+
+.wrunner__divisions_theme_default.wrunner__divisions {
+    display: none !important;
+}
+
+.wrunner__handle_theme_default.wrunner__handle {
+    background-color: #FFFFFF !important;
+    width: 16px;
+    height: 16px;
+    border: solid 2px var(--primary) !important;
+
+}
+
+.wrunner-value-bottom {
+    .wrunner__valueNote {
+        top: unset !important;
+        bottom: -18px;
+
+        &:after {
+            bottom: unset !important;
+            top: -7px;
+            border-top-color: transparent !important;
+            border-bottom-color: $gray-200 !important;
+        }
+    }
+
+    .wrunner__path_theme_default.wrunner__path_direction_horizontal {
+        top: 5px !important;
+    }
+
+    .wrunner__outer_theme_default.wrunner__outer_direction_horizontal {
+        height: 2rem !important;
+    }
+}
+
+.instructor-finder {
+    .instructor-finder-map {
+        width: 100%;
+        height: 550px;
+
+        .marker-pin {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            background-color: #FFFFFF;
+        }
+    }
+
+    .map-instructor-card {
+        .map-instructor-card-avatar {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    .map-instructor-card-popup {
+        bottom: 50px !important;
+
+        .leaflet-popup-content {
+            margin: 0 !important;
+            width: 190px !important;
+        }
+    }
+
+    .instructor-finder-card {
+
+        .instructor-finder-card-right-side {
+            border-left: 1px solid $gray-200;
+
+            @media (max-width: $screen-xs-max) {
+                border-top: 1px solid $gray-200;
+                border-left: 0;
+            }
+        }
+
+        .instructor-avatar {
+            width: 70px;
+            min-width: 70px;
+            max-width: 70px;
+            height: 70px;
+        }
+
+        .off-badge {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #ffffff;
+            padding: 8px 15px;
+            border-radius: 3px 10px 3px 10px;
+            pointer-events: none;
+
+            @media (max-width: $screen-xs-max) {
+                top: 10px;
+            }
+
+            .rtl & {
+                right: auto;
+                left: 10px;
+            }
+        }
+    }
+
+    .instructor-badge {
+        width: 32px;
+        min-width: 32px;
+        max-width: 32px;
+        height: 32px;
+    }
+}
+

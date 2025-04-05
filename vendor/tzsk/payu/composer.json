@@ -1,0 +1,71 @@
+{
+    "name": "tzsk/payu",
+    "description": "PayU India Payment Gateway Integration with Laravel",
+    "keywords": [
+        "tzsk",
+        "payu",
+        "payment",
+        "gateway",
+        "verification",
+        "laravel payu",
+        "payment gateway",
+        "payu payment gateway",
+        "laravel 5 payment gateway",
+        "payu gateway with verification",
+        "payu payment verification laravel"
+    ],
+    "homepage": "https://github.com/tzsk/payu",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tzsk",
+            "email": "mailtokmahmed@gmail.com",
+            "homepage": "https://tzsk.githu.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.0",
+        "laravel/legacy-factories": "^1.0",
+        "laravel/pint": "^1.6",
+        "orchestra/testbench": "^6.0|^7.0|^8.0",
+        "phpstan/phpstan": "^1.4",
+        "phpunit/phpunit": "^9.3",
+        "spatie/phpunit-snapshot-assertions": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tzsk\\Payu\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tzsk\\Payu\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse --level 1 database routes src tests",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tzsk\\Payu\\PayuServiceProvider"
+            ],
+            "aliases": {
+                "Payu": "Tzsk\\Payu\\Facades\\Payu"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.64" height="96.686" viewBox="0 0 98.64 96.686">
+    <defs>
+        <linearGradient id="s9y33hjcma" x1=".893" y1=".897" x2=".125" y2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="he2fly33ib" x1=".893" y1=".897" x2=".125" y2=".096" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#9effc1"/>
+            <stop offset="1" stop-color="#43d477"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-474 -955)" data-name="Group 1721">
+        <rect data-name="Rectangle 831" width="74" height="74" rx="20" transform="rotate(22.5 -2149.396 1740.162)" style="fill:url(#s9y33hjcma);opacity:.1"/>
+        <rect data-name="Rectangle 833" width="8" height="8" rx="4" transform="rotate(51.98 -711.04 1066.947)" style="opacity:.05;fill:url(#s9y33hjcma)"/>
+        <rect data-name="Rectangle 834" width="5.358" height="5.358" rx="2.679" transform="rotate(51.98 -814.767 1010.654)" style="opacity:.31;fill:url(#he2fly33ib)"/>
+        <rect data-name="Rectangle 832" width="8" height="8" rx="4" transform="rotate(51.98 -760.299 980.483)" style="opacity:.05;fill:url(#s9y33hjcma)"/>
+        <g data-name="Group 1725">
+            <path data-name="Path 2417" d="M63.554 4.69A9.2 9.2 0 0 0 57.069 2H11.175A9.175 9.175 0 0 0 2 11.175v45.894a9.175 9.175 0 0 0 9.175 9.175H29.5A5.461 5.461 0 0 1 29.183 65a11.6 11.6 0 0 1-7.107-10.8V36.27A13.772 13.772 0 0 1 35.849 22.5h21.22a13.612 13.612 0 0 1 9.175 3.594V11.175a9.2 9.2 0 0 0-2.69-6.485zm-50.09 11.082a2.289 2.289 0 1 1 2.309-2.309 2.289 2.289 0 0 1-2.309 2.309zm9.175 0a2.279 2.279 0 1 1 .02 0z" transform="translate(488.756 971)" style="fill-rule:evenodd;fill:#43d685"/>
+            <path data-name="Path 2418" d="M44.726 14.5h-21.3a9.2 9.2 0 0 0-9.175 9.175V41.6a7.127 7.127 0 0 0 7.087 7.087V51.3a2.289 2.289 0 0 0 3.634 1.867l6.284-4.477h13.47A9.175 9.175 0 0 0 53.9 39.6V23.675a9.175 9.175 0 0 0-9.174-9.175zM38.7 23.815a2.249 2.249 0 1 1-.08 0zm2.269 9.115a6.816 6.816 0 1 1-13.632 0zm-11.361-9.115a2.249 2.249 0 1 1-.08 0z" transform="translate(501.099 983.595)" style="fill:#072a30;fill-rule:evenodd"/>
+        </g>
+    </g>
+</svg>

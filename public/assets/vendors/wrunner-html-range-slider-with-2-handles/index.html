@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Dual Range Slider Example</title>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <!-- wRunner CSS -->
+    <link rel="stylesheet" href="css/wrunner-default-theme.css">
+    <!-- wRunner Vanilla JS -->
+    <script src="js/wrunner-native.js"></script>
+    
+    <!-- wRunner jQuery -->
+    <script src="js/wrunner-jquery.js"></script>
+    
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+    
+    <style>
+        .my-jquery-slider,
+        .my-js-slider{
+            position: relative;
+            max-width: 500px;
+            margin: 10px auto;
+        }
+    
+    </style>
+         
+
+    
+</head>
+ <body>
+	<header class="intro">
+	<h1> HTML Dual Range Slider Examples using wRunner Plugin </h1>
+	<p>  wRunner is range slider plugin for JavaScript &amp; jQuery.</p>
+	<p> Written in HTML, CSS, JavaScript ... </p>
+	<div class="action">
+	<a href="https://www.codehim.com/text-input/html-range-slider-with-2-handles-javascript/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+	<a href="https://github.com/whiteGloom/wRunner" title="View, Fork or Star on GitHub" class="btn github">View on GitHub</a>
+	</div>
+	</header>
+<main>
+ <article>
+     
+     <h2>HTML Dual Range Slider JavaScript Example</h2>
+	<p>The following is the example of HTML range slider with 2 handles using Vanilla JavaScript. </p>
+     
+     <div class=" my-js-slider"></div> 
+     
+     <pre class="prettyprint lang-js">
+var setting = {
+    roots: document.querySelector('.my-js-slider'),
+    type: 'range',
+    step: 1,
+    }
+
+var slider = wRunner(setting);
+     </pre>
+    <h3> Vertical Slider Example</h3>
+     <p> The following is vertical example of HTML two handles slider.</p>
+     <div class="vertical-slider"></div>
+     
+     <pre class="prettyprint lang-js">
+     direction: 'vertical',
+     </pre>
+     
+     <h2>Dual Range Slider jQuery Example</h2>
+     <p> The following example used jQuery to create two handles range slider.</p>
+     
+     <div class="my-jquery-slider"> </div>
+     
+     <pre class="prettyprint lang-js">
+$(document).ready(function(){
+  //wRunner plugin initialization in jQuery
+  $('.my-jquery-slider').wRunner({
+       type: 'range',
+       rangeValue: {
+            minValue: 30,
+            maxValue: 100,
+                 },
+       step: 1,
+    })
+})
+</pre>
+     
+     <h2> Single Range Slider Example</h2>
+     <p> The following is the wRunner single range slider example.</p>
+     <div class="single-slider"></div>
+     
+    </article>
+    
+
+    
+</main>
+
+<footer class="credit">Author: whiteGloom - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+
+<script>
+//Range slider initialization with Vanilla JavaScript    
+var setting = {
+    roots: document.querySelector('.my-js-slider'),
+    type: 'range',
+    step: 1,
+}
+var slider = wRunner(setting);
+    
+//Vertical range slider
+var setVertical = {
+    roots: document.querySelector('.vertical-slider'),
+    direction: 'vertical',
+    type: 'range',
+}
+var verticalSlider = wRunner(setVertical);
+
+//Single Slider
+var singleSlider = wRunner({
+    roots: document.querySelector('.single-slider')
+});    
+</script>
+
+     <script>
+         $(document).ready(function(){
+             //wRunner plugin initialization in jQuery
+             $('.my-jquery-slider').wRunner({
+                type: 'range',
+                 rangeValue: {
+                     minValue: 30,
+                     maxValue: 100,
+                 },
+                 step: 1,
+             }) 
+         })
+     </script>
+    
+     
+   <!--Syntax Highlighter (for demo only)-->
+   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>     
+ </body>
+</html>

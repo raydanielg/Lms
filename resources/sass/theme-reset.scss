@@ -1,0 +1,75 @@
+$themeResetColors: () !default;
+$themeResetColors: map-merge(
+        (
+            "primary": 'primary',
+            "secondary": 'secondary',
+        ),
+        $themeResetColors
+);
+
+@each $name, $val in $themeResetColors {
+    .bg-#{$name} {
+        background-color: var(--#{$val}) !important;
+    }
+
+    .text-#{$name} {
+        color: var(--#{$val}) !important;
+    }
+
+    .badge-#{$name} {
+        background-color: var(--#{$val}) !important;
+    }
+
+    .badge-circle-#{$name} {
+        background-color: var(--#{$val}) !important;
+    }
+
+    .btn-#{$name} {
+        color: var(--#{$val}-btn-color);
+        background-color: var(--#{$val});
+        border-color: var(--#{$val}-border);
+        box-shadow: var(--#{$val}-btn-shadow);
+        transition: all 0.3s;
+
+        &:hover, &:active, &:focus, &:not(:disabled):not(.disabled):active {
+            color: var(--#{$val}-btn-color-hover);
+            background-color: var(--#{$val}-hover);
+            border-color: var(--#{$val}-border-hover);
+            box-shadow: var(--#{$val}-btn-shadow-hover);
+            transition: all 0.3s;
+        }
+
+        &.disabled, &:disabled {
+            color: var(--#{$val}-btn-color);
+            background-color: var(--#{$val});
+            border-color: var(--#{$val}-border);
+        }
+    }
+
+    .btn-outline-#{$name} {
+        color: var(--#{$val});
+        border-color: var(--#{$val});
+
+        &:hover {
+            color: var(--#{$val}-btn-color);
+            background-color: var(--#{$val});
+            border-color: var(--#{$val});
+        }
+    }
+}
+
+.input-group-text {
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary-border) !important;
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label:before, .custom-control-input:checked ~ .custom-control-label:before {
+    color: var(--primary-btn-color) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary-border) !important;
+    box-shadow: none;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    opacity: .6 !important;
+}

@@ -1,0 +1,29 @@
+{
+  "esnext": true,
+  "asi": true,
+  "browser": false,
+  "bitwise": false,
+  "curly": false,
+  "eqeqeq": false,
+  "indent": 2,
+  "latedef": false,
+  "noarg": false,
+  "undef": false,
+  "unused": false,
+  "globals": {
+    "jQuery": false,
+    "jest": false,
+    "jasmine": false,
+    "describe": false,
+    "xdescribe": false,
+    "ddescribe": false,
+    "it": false,
+    "xit": false,
+    "iit": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "expect": false,
+    "pending": false,
+    "spyOn": false
+  }
+}

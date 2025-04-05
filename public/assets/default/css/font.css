@@ -1,0 +1,60 @@
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(/assets/default/fonts/montserrat-regular.woff2) format('woff2');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(/assets/default/fonts/montserrat-bold.woff2) format('woff2');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(/assets/default/fonts/montserrat-medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('/assets/default/fonts/vazir/Vazir-Regular.eot');
+    src: url('/assets/default/fonts/vazir/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/default/fonts/vazir/Vazir-Regular.woff2') format('woff2'),
+    url('/assets/default/fonts/vazir/Vazir-Regular.woff') format('woff'),
+    url('/assets/default/fonts/vazir/Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('/assets/default/fonts/vazir/Vazir-Bold.eot');
+    src: url('/assets/default/fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/default/fonts/vazir/Vazir-Bold.woff2') format('woff2'),
+    url('/assets/default/fonts/vazir/Vazir-Bold.woff') format('woff'),
+    url('/assets/default/fonts/vazir/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('/assets/default/fonts/vazir/Vazir-Medium.eot');
+    src: url('/assets/default/fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/assets/default/fonts/vazir/Vazir-Medium.woff2') format('woff2'),
+    url('/assets/default/fonts/vazir/Vazir-Medium.woff') format('woff'),
+    url('/assets/default/fonts/vazir/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

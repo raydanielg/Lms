@@ -1,0 +1,32 @@
+{
+    "name": "akcybex/laravel-jazzcash",
+    "description": "Jazzcash - Laravel Jazzcash Payment Gateway Integration",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "AKCybex\\JazzCash\\": "src/"
+        },
+        "classmap": [
+        ]
+    },
+    "authors": [
+        {
+            "name": "Rana Tayyab",
+            "email": "akcybex@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AKCybex\\JazzCash\\AKJazzCashServiceProvider"
+            ],
+            "aliases": {
+                "JazzCash": "AKCybex\\JazzCash\\Facades\\JazzCash"
+            }
+        }
+    }
+}

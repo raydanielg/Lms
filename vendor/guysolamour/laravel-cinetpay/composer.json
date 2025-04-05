@@ -1,0 +1,51 @@
+{
+  "name": "guysolamour/laravel-cinetpay",
+  "description": "A laravel wrapper for cinetpay",
+  "license": "MIT",
+  "keywords": [
+    "cinetpay",
+    "laravel",
+    "payment"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Guy-roland ASSALE",
+      "email": "rolandassale@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "cinetpay/cinetpay-php": "^1.9",
+    "illuminate/support": "^8.0|^9.0|^10.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0|^5.0|^6.0",
+    "phpunit/phpunit": "^8.4|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Guysolamour\\Cinetpay\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Guysolamour\\Cinetpay\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Guysolamour\\Cinetpay\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

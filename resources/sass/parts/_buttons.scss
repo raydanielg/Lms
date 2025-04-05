@@ -1,0 +1,154 @@
+.btn-transparent {
+    background-color: transparent;
+    padding: 0 !important;
+    border: 0 transparent;
+}
+
+.btn-sm {
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-danger{
+    box-shadow: 0 3px 6px 0 rgba(201, 1, 1, 0.29);
+    background-color: #f63c3c;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #dd3535;
+        box-shadow: 0 3px 8px 0 rgba(201, 1, 1, 0.29);
+        transition: all 0.3s;
+    }
+}
+
+.btn-sm-block {
+    @media (max-width: $screen-sm-max) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.btn-border-white {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: solid 1px #f1f1f1;
+    color: #818894;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $gray-300;
+        border: solid 1px $gray-300;
+    }
+}
+
+.btn-border-gray300 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #ececec;
+    color: #818894;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $gray-300;
+        border: solid 1px $gray-300;
+    }
+}
+
+.btn-gray200 {
+    color: #818894;
+}
+
+.btn-light {
+    color: #222222;
+}
+
+.on-off-switch {
+    .custom-control-label {
+        &:before {
+            background-color: #ffffff !important;
+        }
+
+        &:after {
+            background-color: var(--primary) !important;
+        }
+    }
+
+    .custom-control-input:checked~.custom-control-label:after {
+        background-color: #ffffff !important;
+    }
+}
+
+.checkbox-button {
+
+    label {
+        cursor: pointer;
+        font-size: 0.875rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: solid 2px $gray-200;
+        background-color: $gray-200;
+        color: $gray;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border: solid 2px var(--primary);
+            transition: all 0.3s ease;
+        }
+    }
+
+    input[type=checkbox], input[type=radio] {
+        visibility: hidden;
+        display: none;
+        transition: all 0.3s ease;
+
+        &:checked {
+            & + label {
+                border: solid 2px var(--primary);
+                background-color: var(--primary);
+                color: #ffffff;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &.primary-selected {
+        input[type=checkbox], input[type=radio] {
+
+            &:checked {
+                & + label {
+                    color: var(--primary) !important;
+                }
+            }
+        }
+    }
+
+    &.bordered-200 {
+        input[type=checkbox], input[type=radio] {
+
+            &:checked {
+                & + label {
+                    color: #ffffff !important;
+                    background-color: var(--primary) !important;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    @media (max-width: $screen-sm-max) {
+        font-size: 14px !important;
+        padding-right: 22px;
+        padding-left: 22px;
+        height: 44px;
+    }
+}
+
+.badge-circle-danger{
+    font-size: 0.75rem !important;
+}
+
+.badge-circle-primary{
+    font-size: 0.75rem !important;
+}

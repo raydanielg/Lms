@@ -1,0 +1,16 @@
+{
+    "name": "chehivskiy/i18n-arabic",
+    "description": "Class enhances developing Arabic web applications by providing set of methods to process and present Arabic text",
+    "authors": [
+        {
+            "name": "Michael Chehivskiy",
+            "email": "michael.chehivskiy@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "I18N/Arabic.php"
+        ]
+    }
+}

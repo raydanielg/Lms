@@ -1,0 +1,96 @@
+@-moz-keyframes sc-pending {
+    to {
+        background-position: 16px 0
+    }
+}
+
+@-webkit-keyframes sc-pending {
+    to {
+        background-position: 16px 0
+    }
+}
+
+@-o-keyframes sc-pending {
+    to {
+        background-position: 16px 0
+    }
+}
+
+@keyframes sc-pending {
+    to {
+        background-position: 16px 0
+    }
+}
+
+@mixin loadingBarAnimate($animateName) {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAMElEQVQoU2P434CADGgALIZfGkkBdmm4AlzSUAW4pcEK8EljyqJJYygYqdLoCjBlAalbv4Hzd/xyAAAAAElFTkSuQmCC) !important;
+    background-repeat: repeat !important;
+    -moz-animation: $animateName .5s linear infinite;
+    -webkit-animation: $animateName .5s linear infinite;
+    -o-animation: $animateName .5s linear infinite;
+    animation: $animateName .5s linear infinite
+}
+
+@mixin secondaryLoadingBar() {
+    @include loadingBarAnimate(sc-pending);
+    background-color: var(--secondary);
+}
+
+@mixin primaryLoadingBar() {
+    @include loadingBarAnimate(sc-pending);
+    background-color: var(--primary);
+}
+
+@mixin grayLoadingBar() {
+    @include loadingBarAnimate(sc-pending);
+    background-color: $gray-300;
+}
+
+@mixin dangerLoadingBar() {
+    @include loadingBarAnimate(sc-pending);
+    background-color: $danger;
+}
+
+.loadingbar {
+    &.primary {
+        @include primaryLoadingBar();
+
+        &:hover {
+            @include primaryLoadingBar();
+        }
+    }
+
+    // orange loading bar
+    &.secondary {
+        @include secondaryLoadingBar();
+        opacity: 0.75;
+
+        &:hover {
+            @include secondaryLoadingBar();
+            opacity: 0.95;
+        }
+    }
+
+    // gray loading bar
+    &.gray {
+        @include grayLoadingBar();
+        opacity: 0.75;
+
+        &:hover {
+            @include grayLoadingBar();
+            opacity: 0.95;
+        }
+    }
+
+    // danger loading bar
+    &.danger {
+        @include dangerLoadingBar();
+        opacity: 0.75;
+        color: #FFFFFF;
+
+        &:hover {
+            @include dangerLoadingBar();
+            opacity: 0.95;
+        }
+    }
+}

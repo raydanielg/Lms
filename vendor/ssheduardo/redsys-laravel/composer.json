@@ -1,0 +1,36 @@
+{
+    "name": "ssheduardo/redsys-laravel",
+    "description": "Package redsys for laravel",
+    "keywords": ["payment", "pasarela", "lacaixa", "sabadell", "redsys", "tpv"],
+    "homepage": "https://github.com/ssheduardo/redsys-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":Eduardo D",
+            "email": "ssh.eduardo@gmail.com",
+            "homepage": "http://ubublog.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "laravel/framework": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+        "sermepa/sermepa": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ssheduardo\\Redsys\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ssheduardo\\Redsys\\RedsysServiceProvider"
+            ],
+            "aliases": {
+                "Redsys": "Ssheduardo\\Redsys\\Facades\\Redsys"
+            }
+        }
+    }
+}

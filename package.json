@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "bootstrap": "^4.0.0",
+        "laravel-mix": "^6.0.6",
+        "jquery": "2.2.4",
+        "laravel-vite-plugin": "^0.7.2",
+        "lodash": "^4.17.19",
+        "popper.js": "^1.12",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "agora-rtc-sdk": "^3.6.11",
+        "agora-rtm-sdk": "^1.4.3-203",
+        "feather-icons": "^4.28.0",
+        "sweetalert2": "^9.17.1"
+    }
+}

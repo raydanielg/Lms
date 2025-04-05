@@ -1,0 +1,199 @@
+@keyframes rotated {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.mobile-app-section {
+    padding-bottom: 244px;
+    padding-top: 184px;
+
+    @media (max-width: $screen-xs-max) {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .search-input {
+        border-radius: 38px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.03);
+    }
+
+    .mobile-app-section__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mobile-app-section__image {
+        height: 100%;
+        width: 60%;
+        max-width: 884px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        background-image: url("/assets/default/img/mobile-app/hero-bg.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+
+        .rtl & {
+            right: auto;
+            left: 0;
+        }
+
+        .mobile-app-section__image-hero {
+            position: relative;
+            width: 273px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+
+            .mobile-app-section__dots {
+                position: absolute;
+                z-index: -1;
+                top: 60px;
+                left: -30px;
+                animation: hero-dot 5s linear 0s infinite alternate;
+
+                @media (max-width: $screen-xs-max) {
+                    top: 93px;
+                }
+            }
+        }
+
+        & [class*=bubble] {
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+
+            &:before {
+                content: "";
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+            }
+        }
+
+        .bubble-one {
+            width: 120px;
+            height: 120px;
+            left: 20%;
+            bottom: 15%;
+            animation: rotated 7s linear infinite;
+
+            &:before {
+                width: 19px;
+                height: 19px;
+                background: var(--primary);
+            }
+        }
+
+        .bubble-two {
+            width: 80px;
+            height: 80px;
+            right: 24%;
+            top: 15%;
+            animation: rotated 4s linear infinite;
+
+            &:before {
+                width: 10px;
+                height: 10px;
+                background: #feb3ad;
+            }
+        }
+
+        .bubble-three {
+            width: 120px;
+            height: 120px;
+            right: 16%;
+            bottom: 40%;
+            animation: rotated 12s linear infinite;
+
+            &:before {
+                width: 19px;
+                height: 19px;
+                background: #840780;
+            }
+        }
+
+        @media (max-width: $screen-xs-max) {
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+            background-position: center;
+
+            .bubble-one {
+                left: 0;
+            }
+            .bubble-two {
+                right: 0;
+            }
+            .bubble-three {
+                right: 0;
+            }
+        }
+    }
+
+
+    .mobile-app__buttons {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        padding: 5px 25px;
+        border-radius: 38px;
+        box-shadow: 0 10px 15px 0 rgba(67, 212, 119, 0.1);
+        margin-right: 20px;
+
+        &.has-icon {
+            padding: 5px 25px 5px 5px;
+        }
+
+        .mobile-app__button-icon {
+            width: 45px;
+            height: 45px;
+            padding: 7px;
+            background-color: #fff;
+        }
+
+        @each $color in ('primary', 'secondary', 'warning', 'danger') {
+            &.btn-outline-#{$color} .mobile-app__button-icon {
+                background-color: var(--#{$color});
+            }
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 15px;
+            justify-content: start;
+        }
+    }
+}
+
+.rtl {
+    .mobile-app__buttons {
+        margin-right: 0 !important;
+        margin-left: 20px !important;
+
+        &.has-icon {
+            padding: 5px 5px 5px 25px;
+        }
+
+        .mobile-app__button-icon {
+            margin-right: 0 !important;
+            margin-left: 10px !important;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            width: 100%;
+            margin-bottom: 15px;
+            justify-content: start;
+        }
+    }
+}

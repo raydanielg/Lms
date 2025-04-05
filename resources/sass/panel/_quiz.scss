@@ -1,0 +1,177 @@
+
+.quiz-question-card {
+    border-radius: 10px;
+    border: 1px solid $gray-300;
+    background-color: #ffffff;
+    padding: 20px 25px;
+
+    .question-title {
+        font-weight: 500;
+        color: $dark-blue;
+    }
+
+    .question-infos {
+        color: #818894;
+    }
+}
+
+.add-answer-container {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: visible;
+    width: 100%;
+    padding-right: 10px;
+
+    .row {
+        margin: 0;
+    }
+}
+
+.add-answer-card {
+    border-radius: 10px;
+    border: solid 1px $gray-300;
+    padding: 8px 12px;
+    position: relative;
+
+    .answer-remove {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        position: absolute;
+        right: 55px;
+        top: 0;
+        transform: translate(0, -50%);
+    }
+}
+
+.quiz-form {
+
+    .quiz-form-btn {
+        min-width: 170px;
+
+        @media (max-width: $screen-xs-max) {
+            min-width: auto;
+        }
+    }
+
+    fieldset {
+
+        &:not(:first-of-type) {
+            display: none
+        }
+    }
+
+    .quiz-question-media-card {
+        width: 100%;
+        max-width: 100%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .video-js {
+            min-height: 300px !important;
+        }
+    }
+
+    .question-multi-answers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+
+        .answer-item {
+            position: relative;
+            width: 100%;
+            height: 250px;
+
+            .correct {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                border-radius: 10px 0 10px 0;
+                padding: 5px 15px;
+                z-index: 10;
+            }
+
+            .answer-label {
+                cursor: pointer;
+                height: 100%;
+                border-radius: 15px;
+                border: 1px solid $gray-300;
+                text-align: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $info-light;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .image-container {
+                position: relative;
+                cursor: pointer;
+                border-radius: 15px;
+                transition: all .2s ease;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    border-radius: 15px;
+                }
+
+                &:after {
+                    display: block;
+                    opacity: 0;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-image: linear-gradient(to bottom, rgba(6, 6, 6, 0), rgba(0, 0, 0, 0.84));
+                    border-radius: 10px;
+                }
+
+                .selected {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: #fff;
+                    transform: translate(-50%, -50%);
+                    z-index: 5;
+                }
+
+                &:hover:after {
+                    opacity: 1;
+                }
+            }
+
+            input[type=radio] {
+                visibility: hidden;
+                display: none;
+                transition: all ease 0.3s;
+
+                &:checked {
+                    & + .answer-label {
+                        box-shadow: 0 10px 30px 0 rgba(67, 212, 119, 0.3);
+                        border: solid 3px var(--primary);
+                        background-color: #ffffff;
+                        transition: all ease 0.3s;
+
+                        .image-container {
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

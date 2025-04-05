@@ -1,0 +1,48 @@
+.login-container {
+    margin: 120px 0 70px;
+    border-radius: 15px;
+    border: solid 1px $gray-300;
+
+    img {
+        border-radius: 10px 0 0 10px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        margin: 60px 0 70px;
+    }
+}
+
+.login-card {
+    padding: 75px 45px 75px 45px;
+}
+
+.social-login {
+    border-radius: 8px;
+    border: solid 1px #ececec;
+    background-color: #ffffff;
+    font-size: 0.875rem;
+
+    &:hover {
+        background-color: $gray-200;
+        transition: all 0.3s ease;
+    }
+}
+
+.overlay-avatars {
+    position: relative;
+
+    &__item, &__count {
+        margin-left: -20px;
+        border: solid 2px #f1f1f1;
+        background-color: #fff;
+
+        .rtl & {
+            margin-left: 0;
+            margin-right: -20px;
+        }
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,75 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+    $min: breakpoint-min($name, $breakpoints);
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+
+.rtl {
+
+    .mr-auto {
+        margin-right: initial !important;
+        margin-left: auto !important;
+    }
+
+    .ml-auto {
+        margin-left: initial !important;
+        margin-right: auto !important;
+    }
+
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+            @for $i from 1 through 10 {
+                .mr#{$infix}-#{$i*5} {
+                    margin-left: #{$i*5}px !important;
+                    margin-right: initial !important;
+                }
+            }
+
+            @for $i from 1 through 10 {
+                .ml#{$infix}-#{$i*5} {
+                    margin-right: #{$i*5}px !important;
+                    margin-left: initial !important;
+                }
+            }
+
+            @for $i from 1 through 10 {
+                .pr#{$infix}-#{$i*5} {
+                    padding-left: #{$i*5}px !important;
+                    padding-right: initial !important;
+                }
+            }
+
+            @for $i from 1 through 10 {
+                .pl#{$infix}-#{$i*5} {
+                    padding-right: #{$i*5}px !important;
+                    padding-left: initial !important;
+                }
+            }
+
+        }
+    }
+}

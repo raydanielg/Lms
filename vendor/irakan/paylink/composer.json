@@ -1,0 +1,43 @@
+{
+    "name": "irakan/paylink",
+    "description": "Paylink.sa API PHP library",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "paylink",
+        "api",
+        "gateway",
+        "merchant",
+        "pay",
+        "payment"
+    ],
+    "authors": [
+        {
+            "name": "Rakan Salem",
+            "email": "i.rakkan66@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Paylink\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.4"
+    },
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

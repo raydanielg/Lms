@@ -1,0 +1,319 @@
+----- Version 1.9.7 - Release Date: 21 August 2024 -----
+
+Fix: Reported bugs resolved
+
+----- Version 1.9.6 - Release Date: 07 August 2024 -----
+
+Fix: Reported bugs resolved
+
+----- Version 1.9.5 - Release Date: 01 July 2024 -----
+
+New: Interface translator (Plugin)
+New: 4 new SMS gateways (Plugin)
+New: Two new payment gateways (Plugin)
+New: Flutter app API (Plugin)
+New: New Zoom unified integration method
+New: Bundle certificates
+New: Variable commissions
+Improved: Various improvements
+Fix: Reported bugs resolved
+
+
+----- Version 1.9 - Release Date: 09 Mar 2024 -----
+
+New: Courses personal note (Plugin)
+New: Drag-and-drop certificate builder (Plugin)
+New: Cart discount (Plugin)
+New: Abandoned cart (Plugin)
+New: IP management (Plugin)
+New: Sales pop-ups (Plugin)
+New: 6 new payment gateways (Ipay88, Xendit, Paytabs, Paymob, Cintepay, TapPayment)
+New: Permissions management for all user roles
+New: Frontend coupon creation
+New: Display coupons on the course page
+New: Custom badges
+New: Fake sales count
+New: Related courses
+New: Content removal request
+New: Tag page
+New: Learning page preview option
+New: Display video on the profile page
+New: Disable the registration verification process
+New: Manual URL option for secure storage (Bunny.net)
+New: Credentials transferred from the env file to the admin panel
+Improved: RTL problems in some pages
+Improved Student user panel settings
+Improved: Coupon creation form
+Improved: App-only mode landing
+Improved: Guarantee text
+Improved: Upcoming course creation steps
+Improved: Waitlist button status
+Improved: Course support conversation status
+Improved: Color settings
+Improved: Blog categories translations
+Fix: Free text lesson error
+Fix: Payment gateway errors
+Fix: SAAS plans error
+Fix: Agora history list error
+Fix: Category icon issue
+Fix: Course items sorting issue
+Fix: Date picker issue
+Fix: Text-editor issue
+Fix: Form submission error
+Fix: Certificates list issue
+Fix: Comments issue
+Fix: Other reported bugs
+
+----- Version 1.8 - Release Date: 18 Sep 2023 -----
+
+New: AI content generator
+New: Form builder
+New: Variable registration inputs
+New: PHP 8.1 support
+New: Laravel 9 update
+New: New Zoom integration
+New: Admin panel top navigation controls
+New: Thumbnail images for sharing contents
+New: Cashback for offline payments
+Improved: Store feature
+Improved: Installment purchases
+Improved: Quizzes feature
+Improved: Security aspects
+Improved: Duplicate login integrated with Google authentication
+Improved: Meeting booking time slot creation modal
+Fix: Bundles discount badge display error
+Fix: Online PDF viewer buttons problem
+Fix: Multi-currency error on the checkout page
+Fix: Bunny player full-screen error
+Fix: Custom live sessions password error
+Fix: Price display method (Tax Included) error
+Fix: Point &amp; rewards leaderboard problem
+Fix: Top navigation menu problems on mobile devices
+Fix: Store plugin search problem
+Fix: Pricing plans error
+Fix: Maintenance mode error
+Fix: 24h time format problem
+and many more improvements and bug fixes...
+
+----- Version 1.7.2 - Release Date: 06 June 2023 -----
+
+Fix: Reported bugs fixed
+
+----- Version 1.7 - Release Date: 18 March 2023 -----
+
+New: In-app video call 
+New: Multi-currency system with exchange 
+New: Installment (Partial payment) 
+New: Send gift New: Cashback 
+New: Registration bonus 
+New: Secure video storage (Prevent downloads) 
+New: Upcoming courses 
+New: Question bank 
+New: Jitsi integration 
+New: Course waitlist 
+New: GDPR support 
+New: Auto content approval 
+New: change admin panel URL 
+New: Update management 
+New: Private courses 
+New: Course capacity 
+New: Maintenance mode 
+New: Coming soon mode 
+New: CAPTCHA integration 
+New: Flexible payout & offline payment banks 
+New: Top/Bottom bar 
+New: New notifications 
+New: User role selection on the registration page 
+New: New currency options (Decimal, Separator) 
+New: Device limit (Avoid duplicate login) 
+New: Instructor live chat widget 
+New: Select live class providers from the admin panel 
+New: Select upload sources from the admin panel 
+New: New reminder notifications New: Custom statistics 
+New: Quiz expiry date New: Quiz random questions 
+New: Sortable quiz questions New: Sortable categories 
+New: Buy now button for store products and bundles 
+New: Mark all as read button for notifications 
+New: Enable/disable social login from the admin panel 
+New: New discount sources 
+New: Translatable month names 
+Improved: Better error handling 
+Improved: Several security improvements 
+Improved: Design improvements 
+Fix: Reported bugs fixed
+
+----- Version 1.6 - Release Date: 1 July 2022 -----
+
+New: Drip content
+New: Forum & community feature
+New: Course forum
+New: Private mode (Internal LMS)
+New: Store & marketplace
+New: Physical products selling
+New: Course statistics & analytics
+New: Course assignments & homework
+New: Course access period
+New: Manual enrollment
+New: Course bundles
+New: GDPR support
+New: Course notices
+New: Advertising modal
+New: 16 new payment gateways (Robokassa, Mollie, Braintree, Alipay, Authorize.net, Instamojo, Izipay, Klarna, N-genius, Payku, Paylink, Sslcommerz, Payhere, Toyyibpay, Voguepay, JazzCash, Paysera)
+New: Frontend articles submission
+New: Mobile app-only mode
+New: Video/image quiz questions
+New: Course completion certificate
+New: Change colors from the admin panel
+New: Change fonts from the admin panel
+New: Online PDF viewer
+New: Course students notifications
+New: Additional user data input
+New: Buy now button
+New: Automated meeting reminders
+New: Automated live class reminders
+New: Automated subscription renewal reminders
+New: Video background for hero
+New: Drag & drop home page builder
+New: Visual certificate editor
+New: Different course prices for organization members
+New: Unlimited subscription system
+New: New course data (Trusted logos, requirements, learning materials)
+New: Delete account request
+New: Enable debugger from admin
+New: Live class join delay
+New: Additional field in the registration
+New: Customize the top navigation button for different user roles
+New: New discount types
+New: New advertising banner positions
+New: New point & rewarding conditions
+New: New user badges
+New: Better error handling & empty states
+New: New SaaS package conditions
+New: Subcategories icon
+New: New certificate data tags
+New: New SEO settings
+New: New user profile tabs
+Improved: RTL improvement
+Improved: Chapters structure
+Improved: Responsive design
+Fix: Payout requests Excel export error
+Fix: Rating report error
+Fix: Meeting booking calendar direction
+Fix: Paystack price correction
+Fix: Certificate download error
+
+
+
+
+----- Version 1.5 - Release Date: 5 Mar 2022 -----
+
+New: In-App live system
+New: SAAS packages
+New: Learning page
+New: Reward points system
+New: Reward points leaderboard
+New: Support SCORM file types
+New: Tutors finder system
+New: Tutors Map
+New: In-person meetings feature
+New: Group meetings feature
+New: Advanced Meeting Pricing
+New: Multi time-zone feature
+New: External links support
+New: iFrame Support
+New: Google Drive support
+New: PDF and PowerPoint support
+New: Send email to the newsletter and Excel list
+New: Localization system
+New: Included tax price
+New: Time format 12H/24H
+New: Discount code types and conditions
+New: Save cart for visitor users
+New: Home page sections
+New: Meeting reservation description
+New: Offline payment attachment
+New: Amazon S3 native integration
+New: Amazon S3 stream
+Improved: New sources for the demo video
+Improved: Update currencies
+Improved: Multi-language content
+Improved: Text editor features
+Improved: Disable user panel side banner
+Improved: User's financial information privacy
+Improved: New quiz form in the admin panel
+Improved: Translations
+Improved: Accordion chapters on the course page
+Fix: Private courses problem
+Fix: Admin comment Reply Bug
+Fix: The blog comments section
+Fix: Category page filters Bug
+Fix: Iyzico payment gateway problem
+
+
+----- Version 1.4 - Release Date: 9 Nov 2021 -----
+
+Fixed: Comments error in the instrcutor dashboard. 
+Fixed: Error in categories with the same name. 
+Fixed: Error in file edit modal in the admin panel. 
+Fixed: Error in admin profile image. 
+Fixed: Error in the language selection modal in the admin panel. 
+Fixed: Error in saving live class sessions.
+Improved: Vimeo player.
+Improved: Database data structure relations.
+
+
+----- Version 1.3 - Release Date: 26 Oct 2021 -----
+
+New: Affiliate & referral marketing. 
+New: Multi-language content. 
+New: Course sections feature. 
+New: Udemy-style video modal. 
+New: Course content could be enabled/disabled separately. 
+New: Course URL change feature. New: Organize quizzes in course sections. 
+New: Define start time for classes. 
+New: Right-click disabled in the video modal to prevent unwanted downloads. 
+Fixed: Problem in featured courses price. 
+Fixed: Error in saving user financial information. 
+Fixed: Error in certificates text for Arabic language. 
+Fixed: Error in category and blog search. 
+Fixed: Error in tax rate for some currencies. 
+Fixed: User removal for organizations. 
+Fixed: Classes pagination in the admin panel. 
+Fixed: Error in the download status of classes. 
+Fixed: Other bug-fixes. Fixed: Minor responsive issues.
+
+----- Version 1.2 - Release Date: 09 Sep 2021 -----
+
+New: Discount and tax amount in sales list (Admin Panel).
+New: Invited instructor badge on the course page.
+New: Tawk live chat.
+Fixed: Mercadopago payment gateway connection error.
+Fixed: Error in free classes enroll process.
+Fixed: Error in subscribing to a class when the user is not logged in.
+Fixed: Error in sending notifications by staff accounts.
+Fixed: Notifications history error.
+Fixed: Error in Arabic & Persian letters in file manager.
+Fixed: Website downs when the platform title removing.
+Fixed: Admin profile image error.
+Fixed: Contact page error when the page is empty.
+
+
+----- Version 1.1 - Release Date: 01 Sep 2021 -----
+
+New: Class thumbnail images are clickable.
+New: Tax value could be zero.
+New: Instructors can conduct free live classes.
+New: Admin can generate 100% off discount codes.
+New: Single language support.
+New: Instructors can create quizzes with unlimited time.
+Fixed: Extra decimals removed from prices.
+Fixed: Login page data validation error.
+Fixed: Prerequisites relation error.
+Fixed: Meeting settings data validation error.
+Fixed: Admin & front data language loading error.
+Fixed: Excel export error for offline payments.
+Fixed: Error in Stripe gateway price.
+Fixed: Error in subscription plan remained downloads.
+Fixed: Currency view in the cart page.
+Fixed: Error in the admin panel side menu collapse mode.
+

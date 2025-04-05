@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="Group 1764" transform="translate(-1081 -2080)">
+        <circle data-name="Ellipse 378" cx="12" cy="12" r="12" transform="translate(1081 2080)" style="fill:#f63c3c;opacity:.2"/>
+        <g data-name="Icon feather-lock">
+            <path data-name="Path 2437" d="M3.716 9.167h8.512a1.216 1.216 0 0 1 1.216 1.216v4.256a1.216 1.216 0 0 1-1.216 1.216H3.716A1.216 1.216 0 0 1 2.5 14.638v-4.255a1.216 1.216 0 0 1 1.216-1.216z" transform="translate(1085.034 2082.225)" style="fill:none;stroke:#f63c3c;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.3px"/>
+            <path data-name="Path 2438" d="M5.833 7.138V4.706a3.04 3.04 0 1 1 6.08 0v2.432" transform="translate(1084.133 2084.253)" style="fill:none;stroke:#f63c3c;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.3px"/>
+        </g>
+    </g>
+</svg>

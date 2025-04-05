@@ -1,0 +1,47 @@
+// Button sizes
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    height: $padding-y;
+    @include font-size($font-size);
+    @include border-radius(8px, 0);
+
+    font-weight: $line-height;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@mixin button-text-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+    color: $color !important;
+//    border-color: $color;
+
+    @include hover() {
+        color: $color-hover !important;
+        background-color: $active-background !important;
+        border-color: $active-border !important;
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5) !important;
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $color !important;
+        background-color: transparent !important;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .btn-text-#{$color} {
+        @include button-text-variant($value);
+    }
+}
+
+.btn-block {
+    display: inline-flex !important;
+}

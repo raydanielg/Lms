@@ -1,0 +1,19 @@
+.upcoming-followers-card {
+    min-height: 500px;
+    height: calc(100vh - 180px);
+    border-right: 1px solid var(--gray300);
+
+    .upcoming-followers-scrollable {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        max-height: 450px;
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--gray300);
+    }
+}
+
+

@@ -1,0 +1,30 @@
+
+.rtl {
+
+    .flagstrap-icon {
+        margin-right: 0 !important;
+        margin-left: 5px;
+    }
+
+    .input-group {
+        direction: ltr;
+
+        input {
+            direction: rtl;
+        }
+    }
+
+    .form-check {
+        padding-left: 0;
+        padding-right: 1.25rem;
+
+        .form-check-input {
+            margin-left: 0;
+            margin-right: -1.25rem;
+        }
+    }
+
+    .custom-switch {
+        margin-right: -10px;
+    }
+}

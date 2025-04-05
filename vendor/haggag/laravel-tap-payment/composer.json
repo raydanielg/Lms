@@ -1,0 +1,31 @@
+{
+    "name": "haggag/laravel-tap-payment",
+    "description": "Tap Payment SDK Package for PHP Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sfwan Essam",
+            "email": "sfwanessam9@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1|^7.2|^7.3|^8.0|^8.1|^8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "illuminate/support": "5.6.*|5.7.*|5.8.*|6.*|7.*|8.*|9.*"
+    },
+    "autoload" : {
+      "psr-4" : {
+        "Essam\\TapPayment\\" : "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "Essam\\TapPayment\\TapServiceProvider"
+          ]
+      }
+    }
+}

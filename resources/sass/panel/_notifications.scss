@@ -1,0 +1,21 @@
+.notification-card {
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+
+    .badge {
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 30px 0 rgb(67 212 119 / 30%) !important;
+        border: 3px solid var(--primary) !important;
+        transition: all 0.3s ease;
+
+        button {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+    }
+}

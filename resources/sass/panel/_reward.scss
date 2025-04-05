@@ -1,0 +1,80 @@
+
+.reward-gift-img {
+    width: 180px;
+
+    @media (max-width: $screen-xs-max) {
+        width: 120px;
+    }
+}
+
+.leaderboard-avatar {
+    width: 82px;
+    height: 82px;
+    padding: 5px;
+    border: 5px solid var(--primary);
+    border-radius: 50%;
+}
+
+.leaderboard-others-avatar {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+}
+
+.exchange-points-modal-img {
+    min-width: 114px;
+    width: 114px;
+    max-width: 114px;
+    height: 114px;
+}
+
+.how-to-get-bonus-items {
+    position: relative;
+    margin-bottom: 30px;
+
+    .icon-box {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $gray-200;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 38px;
+        left: 18px;
+        height: 60px;
+        width: 1px;
+        border-left: 1px dashed $gray-200;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.bonus-status-pie-charts {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+}
+
+.bonus-status-complete-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    transform: translateY(-50%);
+}

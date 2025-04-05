@@ -1,0 +1,46 @@
+
+.marker-cluster {
+    background-color: transparent !important;
+}
+
+.marker-cluster div {
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    background: #1f3b64;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .5);
+}
+
+.marker-cluster div:before {
+    border: 17px solid #1f3b64;
+    opacity: 0.5;
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-sizing: border-box;
+    animation: cluster-animation 2.5s infinite;
+}
+
+.marker-cluster span {
+    line-height: 30px;
+}
+
+@keyframes cluster-animation {
+    100% {
+        transform:scale(2.8) rotate(90deg);
+        opacity:0;
+    }
+}

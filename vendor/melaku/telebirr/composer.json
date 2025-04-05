@@ -1,0 +1,18 @@
+{
+    "name": "melaku/telebirr",
+    "description": "a telebirr library for php",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Melaku\\Telebirr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MelakuDemeke",
+            "email": "melaku.demeke789@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.996" height="41.996" viewBox="0 0 41.996 41.996">
+    <g data-name="vuesax/linear/video-play">
+        <path d="M35 22.748v-10.5C35 3.5 31.5 0 22.748 0h-10.5C3.5 0 0 3.5 0 12.249v10.5C0 31.5 3.5 35 12.249 35h10.5C31.5 35 35 31.5 35 22.748z" transform="translate(3.5 3.5)" style="stroke-width:2.5px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <path data-name="Vector" d="M0 0h33.177" transform="translate(4.41 12.441)" style="stroke-width:2.5px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <path data-name="Vector" d="M0 0v8.5" transform="translate(14.909 3.692)" style="stroke-width:2.5px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <path data-name="Vector" d="M0 0v7.717" transform="translate(27.087 3.692)" style="stroke-width:2.5px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <path data-name="Vector" d="M0 5.125v-2.1C0 .33 1.907-.772 4.235.575l1.82 1.05 1.82 1.05c2.327 1.347 2.327 3.552 0 4.9l-1.82 1.05-1.82 1.05C1.907 11.022 0 9.919 0 7.224v-2.1z" transform="translate(17.061 20.161)" style="stroke-width:2px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+    </g>
+</svg>

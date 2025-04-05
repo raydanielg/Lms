@@ -1,0 +1,10 @@
+# IDE
+.idea
+
+# Compose
+/vendor/
+composer.phar
+
+# PHPUnit
+.phpunit.result.cache
+test/unit/_html

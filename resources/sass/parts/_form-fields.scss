@@ -1,0 +1,43 @@
+.forms-hero {
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 160px;
+
+    &-mask {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #000 0%, rgba(84, 84, 84, 0) 100%);
+        z-index: 1;
+    }
+
+    &-content {
+        z-index: 2;
+    }
+}
+
+.forms-body {
+    position: relative;
+    top: -242px;
+    margin-bottom: -242px;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.1);
+    z-index: 3;
+
+    .forms-body-welcome-image {
+        width: auto;
+        height: 250px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .forms-body-welcome-message {
+        &, & * {
+            color: var(--gray);
+        }
+    }
+}

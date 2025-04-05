@@ -1,0 +1,25 @@
+.conversation-box {
+    border-radius: 10px;
+    border: solid 1px $gray-300;
+    background-color: $info-light;
+}
+
+.selected-row {
+    background-color: $info-light;
+}
+
+.conversations-list {
+    height: 710px;
+    overflow: auto;
+}
+
+.conversations-card {
+    height: 405px;
+    overflow: auto;
+}
+
+@media (max-width: $screen-sm-max) {
+    .conversations-list {
+        height: 275px;
+    }
+}

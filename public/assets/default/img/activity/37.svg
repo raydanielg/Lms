@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_253" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" data-name="Rectangle 253" transform="translate(1048 176)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#fff}.cls-5{fill:#1f3b64}
+        </style>
+    </defs>
+    <g id="Mask_Group_37" clip-path="url(#clip-path)" data-name="Mask Group 37" transform="translate(-1048 -176)">
+        <g id="money_2_" data-name="money (2)" transform="translate(1048 176)">
+            <g id="Group_518" data-name="Group 518">
+                <circle id="Ellipse_72" cx="12" cy="12" r="12" class="cls-3" data-name="Ellipse 72" transform="translate(20 18.667)"/>
+                <path id="Path_479" d="M57.333 25.333V36a6.667 6.667 0 0 0-6.667 6.667H32a12 12 0 0 0 0-24h18.667a6.667 6.667 0 0 0 6.666 6.666z" class="cls-3" data-name="Path 479"/>
+                <path id="Path_480" d="M20 18.667h12a12 12 0 0 0 0 24H13.333A6.667 6.667 0 0 0 6.667 36V25.333a6.667 6.667 0 0 0 6.667-6.667H20z" class="cls-3" data-name="Path 480"/>
+            </g>
+            <path id="Path_481" fill="#bdd3dd" d="M1.333 45.333V16A2.675 2.675 0 0 1 4 13.333h56A2.675 2.675 0 0 1 62.667 16v29.333A2.675 2.675 0 0 1 60 48H4a2.675 2.675 0 0 1-2.667-2.667zm56-9.333V25.333a6.667 6.667 0 0 1-6.667-6.667H13.333a6.667 6.667 0 0 1-6.667 6.667V36a6.667 6.667 0 0 1 6.667 6.667h37.334A6.666 6.666 0 0 1 57.333 36z" data-name="Path 481"/>
+            <g id="Group_519" data-name="Group 519">
+                <path id="Path_482" d="M60 12h-3.984a1.226 1.226 0 0 1-1.349-1.333V4.552l3.057 3.057 1.885-1.885L54.276.391a1.333 1.333 0 0 0-1.885 0l-5.334 5.333 1.885 1.885L52 4.552v6.115a3.888 3.888 0 0 0 3.773 4H60A1.333 1.333 0 0 1 61.333 16v29.333A1.333 1.333 0 0 1 60 46.667H25.333v2.667H60a4 4 0 0 0 4-4V16a4 4 0 0 0-4-4z" class="cls-5" data-name="Path 482"/>
+                <path id="Path_483" d="M12 42.667A1.333 1.333 0 0 0 13.333 44H20v-2.667h-5.444A8.023 8.023 0 0 0 8 34.777v-8.221A8.023 8.023 0 0 0 14.556 20H20v-2.667h-6.667A1.333 1.333 0 0 0 12 18.667 5.333 5.333 0 0 1 6.667 24a1.333 1.333 0 0 0-1.333 1.333V36a1.333 1.333 0 0 0 1.333 1.333A5.333 5.333 0 0 1 12 42.667z" class="cls-5" data-name="Path 483"/>
+                <path id="Path_484" d="M52 18.667a1.333 1.333 0 0 0-1.333-1.333H44V20h5.444A8.023 8.023 0 0 0 56 26.556v8.221a8.023 8.023 0 0 0-6.556 6.556H44V44h6.667A1.333 1.333 0 0 0 52 42.667a5.333 5.333 0 0 1 5.333-5.333A1.333 1.333 0 0 0 58.667 36V25.333A1.333 1.333 0 0 0 57.333 24 5.333 5.333 0 0 1 52 18.667z" class="cls-5" data-name="Path 484"/>
+                <path id="Path_485" d="M5.333 17.333H8V20H5.333z" class="cls-5" data-name="Path 485"/>
+                <path id="Path_486" d="M56 17.333h2.667V20H56z" class="cls-5" data-name="Path 486"/>
+                <path id="Path_487" d="M56 41.333h2.667V44H56z" class="cls-5" data-name="Path 487"/>
+                <path id="Path_488" d="M5.333 41.333H8V44H5.333z" class="cls-5" data-name="Path 488"/>
+                <path id="Path_489" d="M32 44a13.333 13.333 0 1 0-13.333-13.333A13.333 13.333 0 0 0 32 44zm0-24a10.667 10.667 0 1 1-10.667 10.667A10.667 10.667 0 0 1 32 20z" class="cls-5" data-name="Path 489"/>
+                <path id="Path_490" d="M12 59.448v-8.781a3.888 3.888 0 0 0-3.773-4H4a1.333 1.333 0 0 1-1.333-1.333V16A1.333 1.333 0 0 1 4 14.667h34.667V12H4a4 4 0 0 0-4 4v29.333a4 4 0 0 0 4 4h3.984a1.224 1.224 0 0 1 1.349 1.333v8.781l-3.057-3.056-1.885 1.885 5.333 5.333a1.333 1.333 0 0 0 1.885 0l5.333-5.333-1.885-1.885z" class="cls-5" data-name="Path 490"/>
+                <path id="Path_491" d="M41.333 12H44v2.667h-2.667z" class="cls-5" data-name="Path 491"/>
+                <path id="Path_492" d="M46.667 12h2.667v2.667h-2.667z" class="cls-5" data-name="Path 492"/>
+                <path id="Path_493" d="M14.667 46.667h2.667v2.667h-2.667z" class="cls-5" data-name="Path 493"/>
+                <path id="Path_494" d="M20 46.667h2.667v2.667H20z" class="cls-5" data-name="Path 494"/>
+            </g>
+        </g>
+    </g>
+</svg>

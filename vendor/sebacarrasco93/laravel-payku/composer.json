@@ -1,0 +1,46 @@
+{
+    "name": "sebacarrasco93/laravel-payku",
+    "type": "package",
+    "description": "Payku Package for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Seba Carrasco Poblete",
+            "email": "sebacarrasco93@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SebaCarrasco93\\LaravelPayku\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SebaCarrasco93\\LaravelPayku\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1",
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.18",
+        "pestphp/pest": "^1.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SebaCarrasco93\\LaravelPayku\\LaravelPaykuServiceProvider",
+                "SebaCarrasco93\\LaravelPayku\\RouteServiceProvider"
+            ],
+            "aliases": {
+                "LaravelPayku": "SebaCarrasco93\\LaravelPayku\\Facades\\LaravelPayku"
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

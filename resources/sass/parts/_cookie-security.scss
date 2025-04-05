@@ -1,0 +1,40 @@
+.cookie-security-dialog {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    width: 480px;
+    z-index: 201;
+
+    @media (max-width: $screen-xs-max) {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 15px 15px 0 0 !important;
+    }
+}
+
+.cookie-security-modal-description {
+    &, & * {
+        font-size: 14px;
+        color: var(--gray);
+    }
+}
+
+.cookie-settings-modal-items-card__description {
+    height: 0;
+    overflow: hidden;
+    padding-left: 20px;
+    transition: all .3s ease;
+
+    &.active {
+        margin-top: 15px;
+    }
+}
+
+.c-not-allowed {
+    .custom-control-label {
+        &:after, &:before {
+            cursor: not-allowed;
+        }
+    }
+}
